@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Sleep Chronotype Quiz — Discover Your Sleep Type",
+    "description": "Are you a Lion, Bear, Wolf, or Dolphin? Take our 10-question chronotype quiz to discover your natural sleep rhythm and optimize your productivity.",
+    "ogTitle": "What's Your Sleep Chronotype? — Free Quiz",
+    "ogDescription": "Find out your natural body clock type with 10 simple questions and get personalized sleep & productivity tips."
+  },
+  "nav": {
+    "logo": "Sleep Type Quiz",
+    "language": "언어"
+  },
+  "footer": {
+    "tagline": "Understanding your rhythm is the foundation of personal optimization.",
+    "copyright": "© 2026 Sleep Type Quiz. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "landing": {
+    "badge": "Science-Based Sleep Analysis",
+    "title": "What's Your\nSleep Chronotype?",
+    "subtitle": "Discover your natural biological rhythm with just 10 questions. Are you a Lion, Bear, Wolf, or Dolphin — and what does that mean for your health and productivity?",
+    "startButton": "Take the Quiz",
+    "statsLabel1": "People Tested",
+    "statsValue1": "240K+",
+    "statsLabel2": "Time to Complete",
+    "statsValue2": "3 min",
+    "statsLabel3": "Accuracy Rate",
+    "statsValue3": "92%",
+    "typesTitle": "4 Chronotype Types",
+    "typesSubtitle": "Every person has a unique biological clock. Knowing your type lets you optimize sleep, work, exercise, and meals for peak performance.",
+    "scienceTitle": "Why Does Your Chronotype Matter?",
+    "scienceText": "A chronotype is more than just being a 'morning person' or 'night owl.' It's a complex biological trait shaped by genetics, hormones, and your nervous system. Living in alignment with your chronotype can dramatically improve sleep quality, focus, and daily energy levels.",
+    "howItWorksTitle": "How It Works",
+    "howItWorksSteps": [
+      "Answer 10 honest questions about your daily habits",
+      "Our algorithm analyzes your scores to identify your chronotype",
+      "Get your personalized sleep and productivity roadmap"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Question",
+    "of": "of",
+    "progress": "{{current}} of {{total}}",
+    "next": "Next",
+    "back": "Back",
+    "submit": "See My Results",
+    "selectOption": "Please select an option",
+    "almostDone": "Almost there!",
+    "goodProgress": "Great progress!",
+    "halfwayThere": "Halfway there!"
+  },
+  "result": {
+    "loading": "Analyzing...",
+    "yourTypeIs": "Your chronotype is",
+    "typeLabel": "Chronotype",
+    "populationText": "About {{percentage}}% of the population shares this type",
+    "timelineTitle": "Your Optimal Daily Timeline",
+    "timelineSubtitle": "Aligning your activities to these windows can unlock noticeably higher energy and focus.",
+    "tipsTitle": "Productivity Tips for {{type}}s",
+    "tipsSubtitle": "Practical strategies for living in sync with your natural rhythm.",
+    "shareTitle": "Share Your Results",
+    "shareText": "I'm a {{type}} chronotype! What's yours?",
+    "shareButton": "Share",
+    "copyLink": "Copy Link",
+    "copySuccess": "Link copied!",
+    "retakeButton": "Retake Quiz",
+    "otherTypesTitle": "Explore Other Chronotypes",
+    "scoreBreakdownTitle": "Score Breakdown",
+    "yourScore": "Your Score"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "Lion",
+      "fullName": "The Morning Lion",
+      "shortDesc": "The early riser who conquers the world at dawn",
+      "description": "You are a true morning person who is already in full swing before most people wake up. Your mind is sharpest in the early hours, and you do your best work before noon. By evening, your energy winds down naturally and an early bedtime feels like a reward, not a sacrifice.",
+      "traits": ["Early riser", "Peak focus in the AM", "Tires early in the evening", "Highly disciplined", "Strong willpower"]
+    },
+    "bear": {
+      "name": "Bear",
+      "fullName": "The Solar Bear",
+      "shortDesc": "The balanced type who follows the sun's rhythm",
+      "description": "You belong to the most common chronotype, accounting for over half the population. Your rhythm follows the sun — rising naturally with daylight and winding down after dark. You hit peak cognitive performance between 10 AM and 2 PM, and you're well-suited to standard social and work schedules. Consistent sleep is your superpower.",
+      "traits": ["Balanced sleep cycle", "Peak focus mid-morning to noon", "Fits social schedules well", "Steady energy", "Strong collaborator"]
+    },
+    "wolf": {
+      "name": "Wolf",
+      "fullName": "The Evening Wolf",
+      "shortDesc": "The night thinker whose power awakens after dark",
+      "description": "You are a night owl at heart, taking a long time to warm up in the mornings but coming alive in the evening hours. After 5 PM your energy and creativity surge, and your best ideas often arrive after midnight. You frequently experience 'social jet lag' — the fatigue of forcing yourself to operate on a schedule that doesn't match your biology.",
+      "traits": ["Late riser", "Peak focus in the evening", "Creative thinker", "Night-owl energy", "Deep focus capacity"]
+    },
+    "dolphin": {
+      "name": "Dolphin",
+      "fullName": "The Light-Sleeping Dolphin",
+      "shortDesc": "The hyperaware type with an unpredictable inner clock",
+      "description": "Like the dolphin that sleeps with half its brain awake, you are a light, often restless sleeper with an irregular rhythm. Your concentration comes in unpredictable bursts, and you're highly sensitive to stress, noise, and environmental changes. However, you tend to be highly intelligent and a creative problem-solver with an intensely curious mind.",
+      "traits": ["Light sleeper", "Irregular patterns", "High intelligence", "Sensitive to stimuli", "Explosive focus bursts"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Wake up — Fresh and ready",
+      "exercise": "Exercise — Energize the body",
+      "breakfast": "Breakfast — Fuel for the day",
+      "deepWork": "Deep work begins",
+      "peakFocus": "Peak focus window",
+      "lunch": "Lunch break",
+      "meetings": "Meetings & collaboration",
+      "windDown": "Energy starts declining",
+      "relax": "Light reading or relaxing",
+      "sleep": "Bedtime — Recharge for tomorrow"
+    },
+    "bear": {
+      "wake": "Wake up — Relaxed morning routine",
+      "breakfast": "Breakfast",
+      "commute": "Commute or start the day",
+      "peakFocus": "Peak focus window",
+      "lunch": "Lunch — A midday reset",
+      "collaboration": "Collaboration & meetings",
+      "exercise": "Post-work exercise",
+      "dinner": "Dinner",
+      "windDown": "Wind down & relax",
+      "sleep": "Bedtime"
+    },
+    "wolf": {
+      "wake": "Wake up — Slow start",
+      "slowStart": "Slow warm-up, coffee time",
+      "brunch": "Brunch",
+      "warming": "Gradually getting into gear",
+      "peakFocus": "Energy rising — deep work starts",
+      "dinner": "Dinner",
+      "creativeWork": "Creative work & deep projects",
+      "social": "Social activities or hobbies",
+      "windDown": "Wind down, decompress",
+      "sleep": "Bedtime — Late-night end"
+    },
+    "dolphin": {
+      "wake": "Wake up — Irregular timing",
+      "lightSleep": "Light sleep, frequent waking",
+      "morning": "Morning routine (inconsistent)",
+      "sporadicPeak": "Focus burst (unpredictable)",
+      "afternoon": "Afternoon — Energy dip",
+      "secondWind": "Second wind arrives",
+      "evening": "Evening activities",
+      "racingMind": "Mind won't quiet down",
+      "windDown": "Attempting to wind down",
+      "sleep": "Bedtime — Whenever it comes"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Guard your 6–10 AM window fiercely. Block distractions and schedule your single most important task during this deep work block when your cognitive peak is at its highest.",
+      "2": "Schedule meetings and collaborative work between 1–3 PM. Your energy naturally shifts toward social interaction in the early afternoon.",
+      "3": "Dim screens and use blue-light blocking glasses after 8 PM. Protecting your melatonin production directly determines the quality of your powerful morning tomorrow.",
+      "4": "Keep your weekend wake time within one hour of your weekday schedule. Social jet lag erodes the morning edge that is your greatest competitive advantage.",
+      "5": "Set firm limits on late-evening commitments. Your productivity is built on your sleep, and no late meeting is worth sacrificing your biological prime time."
+    },
+    "bear": {
+      "1": "Designate 10 AM to 2 PM as your protected deep work window and schedule your most important tasks during this block.",
+      "2": "A 10–20 minute nap after lunch can effectively restore your afternoon focus and prevent the post-lunch energy slump.",
+      "3": "Maintain the same sleep and wake times at least 5 days per week. Bears thrive on consistent schedules more than any other chronotype.",
+      "4": "Afternoon exercise (5–7 PM) improves your sleep quality and boosts the next morning's energy — a virtuous cycle worth establishing.",
+      "5": "Limit caffeine to the morning hours and avoid it after 2 PM. Caffeine's half-life means it can still disrupt your sleep 8–10 hours after consumption."
+    },
+    "wolf": {
+      "1": "Save creative and analytical tasks for after 6 PM. That's when your brain generates its most original ideas and clearest thinking.",
+      "2": "Don't fight the slow mornings — work with them. Use the AM for emails, admin, and low-stakes tasks as a 'warm-up block' before your engine fully starts.",
+      "3": "Get maximum light exposure right after waking. Bright natural light or a light therapy lamp is the most effective tool for shifting your body clock earlier.",
+      "4": "End deep work by midnight and begin a genuine wind-down routine. A 30–60 minute transition period improves sleep quality far more than abruptly stopping work.",
+      "5": "Negotiate afternoon slots for important meetings when possible. Forcing yourself to perform in the early morning is simply burning fuel you don't have yet."
+    },
+    "dolphin": {
+      "1": "When a focus burst arrives, drop everything and attack your most important task immediately. You don't have scheduled peak windows — but when the window opens, it's powerful.",
+      "2": "Use your bed only for sleep. Working in bed, watching TV, or scrolling your phone creates a mental association that makes insomnia worse for your sensitive nervous system.",
+      "3": "Engineer a low-stimulation sleep environment. White noise, blackout curtains, and a cool room temperature (64–68°F / 18–20°C) are highly effective for light sleepers.",
+      "4": "Be especially careful with caffeine and alcohol. Dolphins are more sensitive to both substances, and even small amounts can significantly disrupt your sleep architecture.",
+      "5": "Stop trying to build the perfect routine. Instead, anchor just your wake time and let the rest flex. One fixed point is more sustainable and less stressful than a rigid schedule."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "When you wake up naturally — without an alarm — what time do you typically open your eyes?",
+      "options": {
+        "a": "5–6 AM — Already active before the sun fully rises",
+        "b": "7–8 AM — Just the right time",
+        "c": "9–10 AM — A slightly later start feels natural",
+        "d": "It varies every day — No consistent pattern"
+      }
+    },
+    "2": {
+      "text": "What time of day do you feel the most energetic and mentally sharp?",
+      "options": {
+        "a": "Morning — Peak by breakfast, declining by afternoon",
+        "b": "Mid-morning to early afternoon — Around lunch is my best",
+        "c": "Evening — My engine turns on as the sun goes down",
+        "d": "Unpredictable — Suddenly sharp, then suddenly gone"
+      }
+    },
+    "3": {
+      "text": "Which meal of the day are you hungriest for and eat the most?",
+      "options": {
+        "a": "Breakfast — It's my most important and satisfying meal",
+        "b": "Lunch — The biggest meal of my day",
+        "c": "Dinner — I eat my largest meal in the evening",
+        "d": "No pattern — I eat whenever I'm hungry, amounts vary"
+      }
+    },
+    "4": {
+      "text": "When does your body respond best and perform at its peak during exercise?",
+      "options": {
+        "a": "Early morning (before 6 AM) — Morning workouts feel amazing",
+        "b": "Mid-morning to midday — Once my body is properly awake",
+        "c": "Evening — Working out at the end of the day is my preference",
+        "d": "No preference — Whenever I feel like it"
+      }
+    },
+    "5": {
+      "text": "When do new ideas come to you most naturally and creative work flows best?",
+      "options": {
+        "a": "Dawn or early morning — Quiet hours spark my best thinking",
+        "b": "Daytime — External input and activity fuel my ideas",
+        "c": "Late at night — When the world goes quiet, my mind ignites",
+        "d": "Sporadic bursts — Ideas flood in randomly, then disappear"
+      }
+    },
+    "6": {
+      "text": "When do you feel most socially energized and enjoy connecting with people?",
+      "options": {
+        "a": "Morning coffee meetings — Fresh start energy is best",
+        "b": "Lunch gatherings — Relaxed conversation over food is ideal",
+        "c": "Evening dinners or parties — I'm most social after dark",
+        "d": "It's about who, not when — One-on-one works anytime"
+      }
+    },
+    "7": {
+      "text": "Once you're in bed, how long does it typically take you to fall asleep?",
+      "options": {
+        "a": "Almost instantly — Asleep within 5 minutes",
+        "b": "Within 20 minutes — Comfortably drift off",
+        "c": "A long time — My mind won't stop, often 30+ minutes",
+        "d": "It varies wildly — Sometimes instant, sometimes not until dawn"
+      }
+    },
+    "8": {
+      "text": "On weekends with no obligations, what do you typically do in the morning?",
+      "options": {
+        "a": "Wake at roughly the same time as weekdays — automatically",
+        "b": "Sleep in 1–2 extra hours compared to weekdays",
+        "c": "Sleep in 3+ hours or wake up around noon",
+        "d": "Completely unpredictable — no two weekends are the same"
+      }
+    },
+    "9": {
+      "text": "What's your relationship with naps?",
+      "options": {
+        "a": "I don't need them — I'm not drowsy during the day and can't nap anyway",
+        "b": "Occasionally helpful — A short afternoon nap is refreshing",
+        "c": "I love them — An afternoon nap is the highlight of my day",
+        "d": "I want them but can't — Too tired to function but napping wrecks my night sleep"
+      }
+    },
+    "10": {
+      "text": "How does a typical evening wind down for you?",
+      "options": {
+        "a": "TV or light reading, naturally drift off before 10 PM",
+        "b": "Reading or YouTube until around 11 PM, then comfortable sleep",
+        "c": "Actively working or engaged well past midnight, late to bed",
+        "d": "I lie down but my mind races — sleep doesn't come easily regardless of timing"
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import SEOHead from '@/components/SEOHead';
+
+const chronotypeCards = [
+  {
+    id: 'lion',
+    emoji: '🦁',
+    gradient: 'from-amber-400 to-orange-600',
+    pct: '15%',
+  },
+  {
+    id: 'bear',
+    emoji: '🐻',
+    gradient: 'from-emerald-400 to-green-600',
+    pct: '55%',
+  },
+  {
+    id: 'wolf',
+    emoji: '🐺',
+    gradient: 'from-violet-400 to-indigo-600',
+    pct: '15%',
+  },
+  {
+    id: 'dolphin',
+    emoji: '🐬',
+    gradient: 'from-cyan-400 to-teal-600',
+    pct: '10%',
+  },
+];
+
+const fadeUp = {
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+};
+
+export default function LandingPage() {
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <SEOHead />
+      <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4 }}
+      className="min-h-screen text-slate-50"
+    >
+      {/* Hero */}
+      <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-16 text-center">
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-xs font-bold tracking-widest uppercase mb-8">
+            {t('landing.badge')}
+          </span>
+        </motion.div>
+
+        <motion.h1
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6"
+          style={{ whiteSpace: 'pre-line' }}
+        >
+          <span
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200"
+            style={{ filter: 'drop-shadow(0 0 15px rgba(168,85,247,0.5))' }}
+          >
+            {t('landing.title')}
+          </span>
+        </motion.h1>
+
+        <motion.p
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-lg md:text-xl text-slate-300 max-w-md mb-12 font-medium leading-relaxed"
+        >
+          {t('landing.subtitle')}
+        </motion.p>
+
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <motion.button
+            onClick={() => navigate('/quiz')}
+            animate={{
+              boxShadow: [
+                '0 0 20px rgba(168,85,247,0.3)',
+                '0 0 40px rgba(168,85,247,0.6)',
+                '0 0 20px rgba(168,85,247,0.3)',
+              ],
+            }}
+            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="px-8 py-4 rounded-full bg-white text-slate-900 font-bold text-lg cursor-pointer"
+          >
+            {t('landing.startButton')}
+          </motion.button>
+        </motion.div>
+
+        {/* Stats */}
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.55 }}
+          className="flex items-center gap-8 mt-16"
+        >
+          {[
+            { label: t('landing.statsLabel1'), value: t('landing.statsValue1') },
+            { label: t('landing.statsLabel2'), value: t('landing.statsValue2') },
+            { label: t('landing.statsLabel3'), value: t('landing.statsValue3') },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
+              <p className="text-2xl font-black text-slate-200">{stat.value}</p>
+              <p className="text-slate-500 text-xs mt-0.5">{stat.label}</p>
+            </div>
+          ))}
+        </motion.div>
+      </section>
+
+      {/* Chronotype Cards */}
+      <section className="px-4 pb-20 max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-10"
+        >
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-100 mb-3">
+            {t('landing.typesTitle')}
+          </h2>
+          <p className="text-slate-400 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+            {t('landing.typesSubtitle')}
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {chronotypeCards.map((card, i) => (
+            <motion.div
+              key={card.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center hover:bg-white/8 transition-all duration-300"
+            >
+              <div className="text-5xl mb-3">{card.emoji}</div>
+              <p
+                className={`text-sm font-black text-transparent bg-clip-text bg-gradient-to-r ${card.gradient} mb-1`}
+              >
+                {t(`chronotypes.${card.id}.name`)}
+              </p>
+              <p className="text-xs text-slate-500">{card.pct}</p>
+              <p className="text-xs text-slate-400 mt-2 font-medium leading-snug">
+                {t(`chronotypes.${card.id}.shortDesc`)}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="px-4 pb-24 max-w-2xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-10"
+        >
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-100 mb-2">
+            {t('landing.howItWorksTitle')}
+          </h2>
+        </motion.div>
+
+        <div className="flex flex-col gap-4">
+          {(t('landing.howItWorksSteps', { returnObjects: true }) as string[]).map(
+            (step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="flex items-start gap-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5"
+              >
+                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200 flex-shrink-0 leading-none mt-0.5">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <p className="text-slate-300 text-sm font-medium leading-relaxed">{step}</p>
+              </motion.div>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-4 py-8 text-center border-t border-white/5">
+        <p className="text-slate-500 text-xs font-medium">
+          {t('footer.tagline')}
+        </p>
+        <p className="text-slate-600 text-xs mt-2">
+          {t('footer.copyright')}
+        </p>
+      </footer>
+    </motion.div>
+    </>
+  );
+}
