@@ -20,8 +20,25 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=aws-lambda&logoColor=white)](https://aws.amazon.com/lambda/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![CI](https://github.com/black4305/sleep-type/actions/workflows/ci.yml/badge.svg)](https://github.com/black4305/sleep-type/actions/workflows/ci.yml)
 
 </div>
+
+---
+
+## 목차
+
+- [데모 / 스크린샷](#데모--스크린샷)
+- [수면 크로노타입이란?](#수면-크로노타입이란)
+- [네 가지 크로노타입](#네-가지-크로노타입)
+- [주요 기능](#주요-기능)
+- [기술 스택](#기술-스택)
+- [아키텍처](#아키텍처)
+- [빠른 시작](#빠른-시작)
+- [프로젝트 구조](#프로젝트-구조)
+- [로드맵](#로드맵)
+- [기여하기](#기여하기)
+- [라이선스](#라이선스)
 
 ---
 
@@ -30,6 +47,16 @@
 라이브 데모: 준비 중
 
 > 스크린샷이 곧 추가됩니다. 업데이트 소식을 받으려면 이 저장소에 Star를 남겨 주세요.
+
+---
+
+## 왜 Sleep Type인가?
+
+- **과학적 근거, 추측 없음** — 무작위 성격 테스트가 아닌, Dr. Michael Breus의 크로노타입 연구를 기반으로 합니다
+- **실용적인 결과** — 단순한 유형 라벨이 아닌, 맞춤형 하루 일정을 제공합니다
+- **프라이버시 우선** — 계정 불필요, 개인정보 수집 없음
+- **빠름** — 10문항, 3분, 즉시 결과 확인
+- **오픈 소스** — 점수 계산 알고리즘을 직접 확인하고 개선할 수 있습니다
 
 ---
 
@@ -191,6 +218,23 @@ sleep-type/
 
 ---
 
+## 로드맵
+
+- [x] 10문항과 4가지 크로노타입 결과를 포함한 핵심 퀴즈
+- [x] 이중 언어 지원 (영어 + 한국어)
+- [x] SNS 공유 (트위터, 페이스북, 카카오톡)
+- [x] 글로벌 통계를 갖춘 서버리스 백엔드
+- [x] 인터랙티브 하루 타임라인 시각화
+- [ ] 추가 언어 지원 (일본어, 중국어, 스페인어)
+- [ ] PDF 리포트 다운로드
+- [ ] 수면 스케줄 캘린더 내보내기 (.ics)
+- [ ] 다크/라이트 테마 토글
+- [ ] 크로노타입 간 상세 비교
+
+전체 제안 기능 목록은 [이슈 트래커](https://github.com/black4305/sleep-type/issues)를 확인해 주세요.
+
+---
+
 ## 기여하기
 
 기여를 환영합니다. 자세한 내용은 [CONTRIBUTING.md](CONTRIBUTING.md) 를 참고해 주세요.
@@ -204,6 +248,23 @@ sleep-type/
 5. Pull Request를 엽니다
 
 버그 리포트나 기능 요청은 [이슈 트래커](../../issues) 를 이용해 주세요.
+
+---
+
+## 기여자
+
+<a href="https://github.com/black4305/sleep-type/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=black4305/sleep-type" />
+</a>
+
+---
+
+## 후원
+
+이 프로젝트가 유용하다면 개발을 지원해 주세요:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/black4305)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/black4305)
 
 ---
 

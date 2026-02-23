@@ -20,8 +20,26 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=awslambda&logoColor=white)](https://aws.amazon.com/lambda/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github&logoColor=white)](CONTRIBUTING.md)
+[![CI](https://github.com/black4305/sleep-type/actions/workflows/ci.yml/badge.svg)](https://github.com/black4305/sleep-type/actions/workflows/ci.yml)
 
 </div>
+
+---
+
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [What is a Sleep Chronotype?](#what-is-a-sleep-chronotype)
+- [The Four Chronotypes](#the-four-chronotypes)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ---
 
@@ -34,6 +52,16 @@
 > Screenshots coming soon. Star this repo to stay updated.
 
 </div>
+
+---
+
+## Why Sleep Type?
+
+- **Science, not guesswork** — Based on Dr. Michael Breus's chronotype research, not random personality quizzes
+- **Actionable results** — Get a personalized daily schedule, not just a label
+- **Privacy-first** — No account required, no personal data collected
+- **Fast** — 10 questions, 3 minutes, instant results
+- **Open source** — Fully transparent scoring algorithm you can inspect and improve
 
 ---
 
@@ -229,6 +257,23 @@ sleep-type/
 
 ---
 
+## Roadmap
+
+- [x] Core quiz with 10 questions and 4 chronotype results
+- [x] Bilingual support (English + Korean)
+- [x] Social sharing (Twitter, Facebook, KakaoTalk)
+- [x] Serverless backend with global statistics
+- [x] Interactive daily timeline visualization
+- [ ] Add more languages (Japanese, Chinese, Spanish)
+- [ ] PDF report download
+- [ ] Sleep schedule calendar export (.ics)
+- [ ] Dark/Light theme toggle
+- [ ] Detailed comparison between chronotypes
+
+See the [open issues](https://github.com/black4305/sleep-type/issues) for a full list of proposed features.
+
+---
+
 ## Contributing
 
 Contributions are welcome. Please follow these steps:
@@ -248,6 +293,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 ## Acknowledgments
 
 The four chronotype framework — Lion, Bear, Wolf, Dolphin — is based on the research of **Dr. Michael Breus**, clinical psychologist and sleep specialist, as presented in his book *The Power of When* (2016). The scoring model in this quiz is inspired by his chronotype assessment methodology.
+
+---
+
+## Contributors
+
+<a href="https://github.com/black4305/sleep-type/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=black4305/sleep-type" />
+</a>
+
+---
+
+## Support
+
+If you find this project useful, consider supporting its development:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/black4305)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/black4305)
 
 ---
 
