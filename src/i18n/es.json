@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Test de Cronotipo del Sueño — Descubre tu Tipo de Sueño",
+    "description": "¿Eres un León, Oso, Lobo o Delfín? Realiza nuestro test de 10 preguntas para descubrir tu ritmo natural de sueño y optimizar tu productividad.",
+    "ogTitle": "¿Cuál es tu Cronotipo del Sueño? — Test Gratuito",
+    "ogDescription": "Descubre tu tipo de reloj biológico con 10 simples preguntas y obtén consejos personalizados de sueño y productividad."
+  },
+  "nav": {
+    "logo": "Test de Sueño",
+    "language": "Idioma"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "auto": "Auto"
+  },
+  "footer": {
+    "tagline": "Entender tu ritmo es la base de la optimización personal.",
+    "copyright": "© 2026 Sleep Type Quiz. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
+  },
+  "landing": {
+    "badge": "Análisis del Sueño Basado en Ciencia",
+    "title": "¿Cuál es tu\nCronotipo del Sueño?",
+    "subtitle": "Descubre tu ritmo biológico natural con solo 10 preguntas. ¿Eres un León, Oso, Lobo o Delfín — y qué significa eso para tu salud y productividad?",
+    "startButton": "Hacer el Test",
+    "statsLabel1": "Personas Evaluadas",
+    "statsValue1": "240K+",
+    "statsLabel2": "Tiempo para Completar",
+    "statsValue2": "3 min",
+    "statsLabel3": "Tasa de Precisión",
+    "statsValue3": "92%",
+    "typesTitle": "4 Tipos de Cronotipo",
+    "typesSubtitle": "Cada persona tiene un reloj biológico único. Conocer tu tipo te permite optimizar el sueño, trabajo, ejercicio y comidas para el máximo rendimiento.",
+    "scienceTitle": "¿Por Qué Importa tu Cronotipo?",
+    "scienceText": "Un cronotipo es más que ser una 'persona matutina' o 'noctámbulo'. Es un rasgo biológico complejo moldeado por la genética, las hormonas y tu sistema nervioso. Vivir en armonía con tu cronotipo puede mejorar dramáticamente la calidad del sueño, el enfoque y los niveles de energía diaria.",
+    "howItWorksTitle": "Cómo Funciona",
+    "howItWorksSteps": [
+      "Responde 10 preguntas honestas sobre tus hábitos diarios",
+      "Nuestro algoritmo analiza tus puntuaciones para identificar tu cronotipo",
+      "Obtén tu hoja de ruta personalizada de sueño y productividad"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Pregunta",
+    "of": "de",
+    "progress": "{{current}} de {{total}}",
+    "next": "Siguiente",
+    "back": "Anterior",
+    "submit": "Ver mis Resultados",
+    "selectOption": "Por favor selecciona una opción",
+    "almostDone": "¡Casi terminado!",
+    "goodProgress": "¡Gran progreso!",
+    "halfwayThere": "¡A mitad de camino!"
+  },
+  "result": {
+    "loading": "Analizando...",
+    "yourTypeIs": "Tu cronotipo es",
+    "typeLabel": "Cronotipo",
+    "populationText": "Aproximadamente el {{percentage}}% de la población comparte este tipo",
+    "timelineTitle": "Tu Cronograma Diario Óptimo",
+    "timelineSubtitle": "Alinear tus actividades en estos horarios puede desbloquear notablemente mayor energía y enfoque.",
+    "tipsTitle": "Consejos de Productividad para los {{type}}",
+    "tipsSubtitle": "Estrategias prácticas para vivir en sincronía con tu ritmo natural.",
+    "shareTitle": "Comparte tus Resultados",
+    "shareText": "¡Soy un cronotipo {{type}}! ¿Cuál es el tuyo?",
+    "shareButton": "Compartir",
+    "copyLink": "Copiar Enlace",
+    "copySuccess": "¡Enlace copiado!",
+    "retakeButton": "Repetir el Test",
+    "otherTypesTitle": "Explorar Otros Cronotipos",
+    "scoreBreakdownTitle": "Desglose de Puntuación",
+    "yourScore": "Tu Puntuación"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "León",
+      "fullName": "El León Madrugador",
+      "shortDesc": "El madrugador que conquista el mundo al amanecer",
+      "description": "Eres una verdadera persona matutina que ya está en plena actividad antes de que la mayoría se despierte. Tu mente está más aguda en las primeras horas, y haces tu mejor trabajo antes del mediodía. Al llegar la noche, tu energía disminuye naturalmente y acostarte temprano se siente como una recompensa, no un sacrificio.",
+      "traits": ["Madrugador", "Máximo enfoque por la mañana", "Se cansa temprano en la noche", "Muy disciplinado", "Gran fuerza de voluntad"]
+    },
+    "bear": {
+      "name": "Oso",
+      "fullName": "El Oso Solar",
+      "shortDesc": "El tipo equilibrado que sigue el ritmo del sol",
+      "description": "Perteneces al cronotipo más común, que representa más de la mitad de la población. Tu ritmo sigue el sol — despiertas naturalmente con la luz del día y te relajas después de oscurecer. Alcanzas el máximo rendimiento cognitivo entre las 10 AM y las 2 PM, y te adaptas bien a los horarios sociales y laborales estándar. El sueño consistente es tu superpoder.",
+      "traits": ["Ciclo de sueño equilibrado", "Máximo enfoque de media mañana al mediodía", "Se adapta bien a los horarios sociales", "Energía estable", "Gran colaborador"]
+    },
+    "wolf": {
+      "name": "Lobo",
+      "fullName": "El Lobo Nocturno",
+      "shortDesc": "El pensador nocturno cuyo poder despierta después del anochecer",
+      "description": "Eres un noctámbulo de corazón, tardas mucho en arrancar por las mañanas pero cobras vida en las horas vespertinas. Después de las 5 PM tu energía y creatividad se disparan, y tus mejores ideas suelen llegar después de la medianoche. Frecuentemente experimentas el 'jet lag social' — la fatiga de obligarte a operar con un horario que no coincide con tu biología.",
+      "traits": ["Madrugador tardío", "Máximo enfoque por la noche", "Pensador creativo", "Energía nocturna", "Capacidad de enfoque profundo"]
+    },
+    "dolphin": {
+      "name": "Delfín",
+      "fullName": "El Delfín Dormilón Ligero",
+      "shortDesc": "El tipo hiperconsciente con un reloj interno impredecible",
+      "description": "Como el delfín que duerme con la mitad del cerebro despierto, eres un durmiente ligero, a menudo inquieto, con un ritmo irregular. Tu concentración viene en explosiones impredecibles, y eres muy sensible al estrés, el ruido y los cambios ambientales. Sin embargo, tiendes a ser muy inteligente y un solucionador creativo de problemas con una mente intensamente curiosa.",
+      "traits": ["Dormilón ligero", "Patrones irregulares", "Alta inteligencia", "Sensible a estímulos", "Explosiones de enfoque intenso"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Despertar — Fresco y listo",
+      "exercise": "Ejercicio — Energizar el cuerpo",
+      "breakfast": "Desayuno — Combustible para el día",
+      "deepWork": "Comienza el trabajo profundo",
+      "peakFocus": "Ventana de máximo enfoque",
+      "lunch": "Pausa para el almuerzo",
+      "meetings": "Reuniones y colaboración",
+      "windDown": "La energía comienza a declinar",
+      "relax": "Lectura ligera o relajación",
+      "sleep": "Hora de dormir — Recargar para mañana"
+    },
+    "bear": {
+      "wake": "Despertar — Rutina matutina relajada",
+      "breakfast": "Desayuno",
+      "commute": "Desplazamiento o inicio del día",
+      "peakFocus": "Ventana de máximo enfoque",
+      "lunch": "Almuerzo — Un reinicio a mitad del día",
+      "collaboration": "Colaboración y reuniones",
+      "exercise": "Ejercicio después del trabajo",
+      "dinner": "Cena",
+      "windDown": "Relajarse y descansar",
+      "sleep": "Hora de dormir"
+    },
+    "wolf": {
+      "wake": "Despertar — Inicio lento",
+      "slowStart": "Calentamiento lento, hora del café",
+      "brunch": "Brunch",
+      "warming": "Entrando gradualmente en marcha",
+      "peakFocus": "Energía en aumento — comienza el trabajo profundo",
+      "dinner": "Cena",
+      "creativeWork": "Trabajo creativo y proyectos profundos",
+      "social": "Actividades sociales o aficiones",
+      "windDown": "Relajarse, descomprimir",
+      "sleep": "Hora de dormir — Fin de la noche"
+    },
+    "dolphin": {
+      "wake": "Despertar — Horario irregular",
+      "lightSleep": "Sueño ligero, despertares frecuentes",
+      "morning": "Rutina matutina (inconsistente)",
+      "sporadicPeak": "Explosión de enfoque (impredecible)",
+      "afternoon": "Tarde — Caída de energía",
+      "secondWind": "Llega el segundo aire",
+      "evening": "Actividades vespertinas",
+      "racingMind": "La mente no se aquieta",
+      "windDown": "Intentando relajarse",
+      "sleep": "Hora de dormir — Cuando llegue"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Protege ferozmente tu ventana de las 6 a las 10 AM. Bloquea las distracciones y programa tu tarea más importante durante este bloque de trabajo profundo cuando tu pico cognitivo es máximo.",
+      "2": "Programa reuniones y trabajo colaborativo entre la 1 y las 3 PM. Tu energía se desplaza naturalmente hacia la interacción social en la primera tarde.",
+      "3": "Atenúa las pantallas y usa gafas con filtro de luz azul después de las 8 PM. Proteger la producción de melatonina determina directamente la calidad de tu poderosa mañana del día siguiente.",
+      "4": "Mantén tu hora de despertar del fin de semana dentro de una hora de tu horario entre semana. El jet lag social erosiona la ventaja matutina que es tu mayor ventaja competitiva.",
+      "5": "Establece límites firmes en los compromisos de última hora de la noche. Tu productividad se construye sobre tu sueño, y ninguna reunión tardía vale la pena sacrificar tu tiempo prime biológico."
+    },
+    "bear": {
+      "1": "Designa de las 10 AM a las 2 PM como tu ventana protegida de trabajo profundo y programa tus tareas más importantes durante este bloque.",
+      "2": "Una siesta de 10 a 20 minutos después del almuerzo puede restaurar eficazmente tu enfoque vespertino y prevenir la caída de energía post-almuerzo.",
+      "3": "Mantén los mismos horarios de sueño y despertar al menos 5 días a la semana. Los Osos prosperan con horarios consistentes más que cualquier otro cronotipo.",
+      "4": "El ejercicio vespertino (5-7 PM) mejora la calidad de tu sueño y aumenta la energía de la mañana siguiente — un ciclo virtuoso que vale la pena establecer.",
+      "5": "Limita la cafeína a las horas de la mañana y evítala después de las 2 PM. La vida media de la cafeína significa que aún puede alterar tu sueño 8-10 horas después del consumo."
+    },
+    "wolf": {
+      "1": "Reserva las tareas creativas y analíticas para después de las 6 PM. Ahí es cuando tu cerebro genera sus ideas más originales y su pensamiento más claro.",
+      "2": "No luches contra las mañanas lentas — trabaja con ellas. Usa la mañana para correos, administración y tareas de bajo riesgo como un 'bloque de calentamiento' antes de que tu motor arranque por completo.",
+      "3": "Maximiza la exposición a la luz justo después de despertar. La luz natural brillante o una lámpara de fototerapia es la herramienta más eficaz para adelantar tu reloj biológico.",
+      "4": "Termina el trabajo profundo a medianoche y comienza una rutina genuina de relajación. Un período de transición de 30 a 60 minutos mejora mucho más la calidad del sueño que parar abruptamente.",
+      "5": "Negocia turnos de tarde para reuniones importantes cuando sea posible. Obligarte a rendir a primera hora de la mañana es simplemente quemar combustible que aún no tienes."
+    },
+    "dolphin": {
+      "1": "Cuando llegue una explosión de enfoque, déjalo todo y ataca tu tarea más importante inmediatamente. No tienes ventanas de pico programadas, pero cuando la ventana se abre, es poderosa.",
+      "2": "Usa tu cama solo para dormir. Trabajar en la cama, ver televisión o hacer scroll en el teléfono crea una asociación mental que empeora el insomnio para tu sistema nervioso sensible.",
+      "3": "Crea un ambiente de sueño de baja estimulación. El ruido blanco, las cortinas opacas y una temperatura fresca (18-20°C) son muy eficaces para los dormilones ligeros.",
+      "4": "Ten especial cuidado con la cafeína y el alcohol. Los Delfines son más sensibles a ambas sustancias, e incluso pequeñas cantidades pueden alterar significativamente tu arquitectura del sueño.",
+      "5": "Deja de intentar construir la rutina perfecta. En su lugar, ancla solo tu hora de despertar y deja que el resto sea flexible. Un punto fijo es más sostenible y menos estresante que un horario rígido."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "Cuando te despiertas de forma natural — sin alarma — ¿a qué hora sueles abrir los ojos?",
+      "options": {
+        "a": "5-6 AM — Ya activo antes de que el sol salga completamente",
+        "b": "7-8 AM — El momento justo",
+        "c": "9-10 AM — Un inicio algo más tardío se siente natural",
+        "d": "Varía cada día — Sin patrón consistente"
+      }
+    },
+    "2": {
+      "text": "¿A qué hora del día te sientes más enérgico y mentalmente agudo?",
+      "options": {
+        "a": "Mañana — Pico en el desayuno, declinando por la tarde",
+        "b": "De media mañana a primera tarde — Mi mejor momento es alrededor del almuerzo",
+        "c": "Noche — Mi motor se enciende cuando se pone el sol",
+        "d": "Impredecible — De repente agudo, luego de repente desaparece"
+      }
+    },
+    "3": {
+      "text": "¿Cuál es la comida del día en la que tienes más hambre y comes más?",
+      "options": {
+        "a": "Desayuno — Es mi comida más importante y satisfactoria",
+        "b": "Almuerzo — La comida más abundante del día",
+        "c": "Cena — Como mi comida más grande por la noche",
+        "d": "Sin patrón — Como cuando tengo hambre, la cantidad varía"
+      }
+    },
+    "4": {
+      "text": "¿Cuándo responde mejor tu cuerpo y rinde al máximo durante el ejercicio?",
+      "options": {
+        "a": "Temprano en la mañana (antes de las 6 AM) — Los entrenamientos matutinos se sienten increíbles",
+        "b": "De media mañana al mediodía — Una vez que mi cuerpo está bien despierto",
+        "c": "Noche — Entrenar al final del día es mi preferencia",
+        "d": "Sin preferencia — Cuando me apetece"
+      }
+    },
+    "5": {
+      "text": "¿Cuándo te llegan las nuevas ideas más naturalmente y el trabajo creativo fluye mejor?",
+      "options": {
+        "a": "Al amanecer o temprano en la mañana — Las horas tranquilas despiertan mi mejor pensamiento",
+        "b": "Durante el día — Los estímulos externos y la actividad alimentan mis ideas",
+        "c": "Tarde en la noche — Cuando el mundo se calla, mi mente se enciende",
+        "d": "Explosiones esporádicas — Las ideas llegan de repente, luego desaparecen"
+      }
+    },
+    "6": {
+      "text": "¿Cuándo te sientes más energizado socialmente y disfrutas conectar con personas?",
+      "options": {
+        "a": "Reuniones de café matutinas — La energía del comienzo fresco es la mejor",
+        "b": "Reuniones de almuerzo — La conversación relajada sobre la comida es ideal",
+        "c": "Cenas o fiestas nocturnas — Soy más sociable después de oscurecer",
+        "d": "Depende de con quién, no de cuándo — Uno a uno funciona en cualquier momento"
+      }
+    },
+    "7": {
+      "text": "Una vez en la cama, ¿cuánto tiempo suele llevarte quedarte dormido?",
+      "options": {
+        "a": "Casi de inmediato — Dormido en 5 minutos",
+        "b": "En 20 minutos — Me duermo cómodamente",
+        "c": "Mucho tiempo — Mi mente no para, a menudo 30+ minutos",
+        "d": "Varía mucho — A veces de inmediato, a veces no hasta el amanecer"
+      }
+    },
+    "8": {
+      "text": "En fines de semana sin obligaciones, ¿qué haces típicamente por la mañana?",
+      "options": {
+        "a": "Me despierto aproximadamente a la misma hora que los días de semana — automáticamente",
+        "b": "Duermo 1-2 horas adicionales comparado con los días de semana",
+        "c": "Duermo 3+ horas más o me despierto alrededor del mediodía",
+        "d": "Completamente impredecible — ningún fin de semana es igual"
+      }
+    },
+    "9": {
+      "text": "¿Cuál es tu relación con las siestas?",
+      "options": {
+        "a": "No las necesito — No estoy soñoliento durante el día y de todas formas no puedo hacer una siesta",
+        "b": "Ocasionalmente útiles — Una siesta corta vespertina es refrescante",
+        "c": "Me encantan — Una siesta vespertina es el punto culminante de mi día",
+        "d": "Las quiero pero no puedo — Demasiado cansado para funcionar pero las siestas arruinan mi sueño nocturno"
+      }
+    },
+    "10": {
+      "text": "¿Cómo termina típicamente una noche para ti?",
+      "options": {
+        "a": "TV o lectura ligera, me duermo naturalmente antes de las 10 PM",
+        "b": "Leyendo o YouTube hasta alrededor de las 11 PM, luego duermo cómodamente",
+        "c": "Trabajando activamente o muy ocupado hasta después de la medianoche, me acuesto tarde",
+        "d": "Me acuesto pero mi mente se dispara — el sueño no llega fácilmente independientemente del horario"
+      }
+    }
+  }
+}

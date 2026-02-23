@@ -9,6 +9,11 @@
     "logo": "Sleep Type Quiz",
     "language": "언어"
   },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto"
+  },
   "footer": {
     "tagline": "Understanding your rhythm is the foundation of personal optimization.",
     "copyright": "© 2026 Sleep Type Quiz. All rights reserved.",
@@ -17,7 +22,15 @@
   },
   "language": {
     "ko": "한국어",
-    "en": "English"
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
   },
   "landing": {
     "badge": "Science-Based Sleep Analysis",

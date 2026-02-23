@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Quiz Chronotype du Sommeil — Découvrez votre Type de Sommeil",
+    "description": "Êtes-vous un Lion, un Ours, un Loup ou un Dauphin ? Faites notre quiz de 10 questions pour découvrir votre rythme naturel de sommeil et optimiser votre productivité.",
+    "ogTitle": "Quel est votre Chronotype du Sommeil ? — Quiz Gratuit",
+    "ogDescription": "Découvrez votre type d'horloge biologique avec 10 questions simples et obtenez des conseils personnalisés sur le sommeil et la productivité."
+  },
+  "nav": {
+    "logo": "Quiz sur le Sommeil",
+    "language": "Langue"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "auto": "Auto"
+  },
+  "footer": {
+    "tagline": "Comprendre votre rythme est le fondement de l'optimisation personnelle.",
+    "copyright": "© 2026 Sleep Type Quiz. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
+  },
+  "landing": {
+    "badge": "Analyse du Sommeil Basée sur la Science",
+    "title": "Quel est votre\nChronotype du Sommeil ?",
+    "subtitle": "Découvrez votre rythme biologique naturel avec seulement 10 questions. Êtes-vous un Lion, un Ours, un Loup ou un Dauphin — et qu'est-ce que cela signifie pour votre santé et votre productivité ?",
+    "startButton": "Faire le Quiz",
+    "statsLabel1": "Personnes Testées",
+    "statsValue1": "240K+",
+    "statsLabel2": "Temps pour Compléter",
+    "statsValue2": "3 min",
+    "statsLabel3": "Taux de Précision",
+    "statsValue3": "92%",
+    "typesTitle": "4 Types de Chronotype",
+    "typesSubtitle": "Chaque personne possède une horloge biologique unique. Connaître votre type vous permet d'optimiser le sommeil, le travail, l'exercice et les repas pour des performances optimales.",
+    "scienceTitle": "Pourquoi votre Chronotype est-il Important ?",
+    "scienceText": "Un chronotype est bien plus qu'être une 'personne du matin' ou un 'couche-tard'. C'est un trait biologique complexe façonné par la génétique, les hormones et votre système nerveux. Vivre en accord avec votre chronotype peut considérablement améliorer la qualité du sommeil, la concentration et les niveaux d'énergie quotidienne.",
+    "howItWorksTitle": "Comment Ça Fonctionne",
+    "howItWorksSteps": [
+      "Répondez honnêtement à 10 questions sur vos habitudes quotidiennes",
+      "Notre algorithme analyse vos scores pour identifier votre chronotype",
+      "Obtenez votre feuille de route personnalisée de sommeil et de productivité"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Question",
+    "of": "sur",
+    "progress": "{{current}} sur {{total}}",
+    "next": "Suivant",
+    "back": "Précédent",
+    "submit": "Voir mes Résultats",
+    "selectOption": "Veuillez sélectionner une option",
+    "almostDone": "Presque terminé !",
+    "goodProgress": "Bonne progression !",
+    "halfwayThere": "À mi-chemin !"
+  },
+  "result": {
+    "loading": "Analyse en cours...",
+    "yourTypeIs": "Votre chronotype est",
+    "typeLabel": "Chronotype",
+    "populationText": "Environ {{percentage}}% de la population partage ce type",
+    "timelineTitle": "Votre Emploi du Temps Quotidien Optimal",
+    "timelineSubtitle": "Aligner vos activités sur ces créneaux peut libérer une énergie et une concentration notablement plus élevées.",
+    "tipsTitle": "Conseils de Productivité pour les {{type}}",
+    "tipsSubtitle": "Stratégies pratiques pour vivre en synchronie avec votre rythme naturel.",
+    "shareTitle": "Partager vos Résultats",
+    "shareText": "Je suis un chronotype {{type}} ! Quel est le vôtre ?",
+    "shareButton": "Partager",
+    "copyLink": "Copier le Lien",
+    "copySuccess": "Lien copié !",
+    "retakeButton": "Refaire le Quiz",
+    "otherTypesTitle": "Explorer les Autres Chronotypes",
+    "scoreBreakdownTitle": "Répartition des Scores",
+    "yourScore": "Votre Score"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "Lion",
+      "fullName": "Le Lion Matinal",
+      "shortDesc": "Le lève-tôt qui conquiert le monde à l'aube",
+      "description": "Vous êtes une vraie personne du matin, déjà en pleine activité avant que la plupart des gens se réveillent. Votre esprit est le plus aiguisé aux premières heures, et vous faites votre meilleur travail avant midi. Le soir, votre énergie diminue naturellement et se coucher tôt semble une récompense, pas un sacrifice.",
+      "traits": ["Lève-tôt", "Concentration maximale le matin", "Se fatigue tôt le soir", "Très discipliné", "Grande volonté"]
+    },
+    "bear": {
+      "name": "Ours",
+      "fullName": "L'Ours Solaire",
+      "shortDesc": "Le type équilibré qui suit le rythme du soleil",
+      "description": "Vous appartenez au chronotype le plus courant, représentant plus de la moitié de la population. Votre rythme suit le soleil — vous vous réveillez naturellement avec la lumière du jour et vous vous apaisez après la tombée de la nuit. Vous atteignez des performances cognitives optimales entre 10h et 14h, et vous êtes bien adapté aux horaires sociaux et professionnels standards.",
+      "traits": ["Cycle de sommeil équilibré", "Concentration maximale de mi-matinée à midi", "Bien adapté aux horaires sociaux", "Énergie stable", "Fort collaborateur"]
+    },
+    "wolf": {
+      "name": "Loup",
+      "fullName": "Le Loup du Soir",
+      "shortDesc": "Le penseur nocturne dont le pouvoir s'éveille après la nuit tombée",
+      "description": "Vous êtes un noctambule dans l'âme, mettant beaucoup de temps à vous mettre en route le matin mais prenant vie dans les heures vespérales. Après 17h, votre énergie et votre créativité augmentent fortement, et vos meilleures idées arrivent souvent après minuit. Vous ressentez fréquemment le 'décalage horaire social' — la fatigue de vous forcer à opérer selon un horaire qui ne correspond pas à votre biologie.",
+      "traits": ["Lève-tard", "Concentration maximale le soir", "Penseur créatif", "Énergie nocturne", "Capacité de concentration profonde"]
+    },
+    "dolphin": {
+      "name": "Dauphin",
+      "fullName": "Le Dauphin Léger Dormeur",
+      "shortDesc": "Le type hyperconscient avec une horloge interne imprévisible",
+      "description": "Comme le dauphin qui dort avec la moitié de son cerveau éveillé, vous êtes un dormeur léger, souvent agité, avec un rythme irrégulier. Votre concentration se manifeste en rafales imprévisibles, et vous êtes très sensible au stress, au bruit et aux changements environnementaux. Cependant, vous tendez à être très intelligent et un résolveur de problèmes créatif avec un esprit intensément curieux.",
+      "traits": ["Dormeur léger", "Schémas irréguliers", "Haute intelligence", "Sensible aux stimuli", "Rafales de concentration explosives"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Réveil — Frais et prêt",
+      "exercise": "Exercice — Dynamiser le corps",
+      "breakfast": "Petit-déjeuner — Carburant pour la journée",
+      "deepWork": "Début du travail profond",
+      "peakFocus": "Fenêtre de concentration maximale",
+      "lunch": "Pause déjeuner",
+      "meetings": "Réunions et collaboration",
+      "windDown": "L'énergie commence à décliner",
+      "relax": "Lecture légère ou relaxation",
+      "sleep": "Coucher — Recharger pour demain"
+    },
+    "bear": {
+      "wake": "Réveil — Routine matinale détendue",
+      "breakfast": "Petit-déjeuner",
+      "commute": "Trajet ou début de journée",
+      "peakFocus": "Fenêtre de concentration maximale",
+      "lunch": "Déjeuner — Une remise à zéro en milieu de journée",
+      "collaboration": "Collaboration et réunions",
+      "exercise": "Exercice après le travail",
+      "dinner": "Dîner",
+      "windDown": "Se détendre et se relaxer",
+      "sleep": "Coucher"
+    },
+    "wolf": {
+      "wake": "Réveil — Départ lent",
+      "slowStart": "Échauffement lent, heure du café",
+      "brunch": "Brunch",
+      "warming": "Entrer progressivement dans le rythme",
+      "peakFocus": "Énergie en hausse — début du travail profond",
+      "dinner": "Dîner",
+      "creativeWork": "Travail créatif et projets profonds",
+      "social": "Activités sociales ou loisirs",
+      "windDown": "Se détendre, décompresser",
+      "sleep": "Coucher — Fin de la soirée tardive"
+    },
+    "dolphin": {
+      "wake": "Réveil — Timing irrégulier",
+      "lightSleep": "Sommeil léger, réveils fréquents",
+      "morning": "Routine matinale (incohérente)",
+      "sporadicPeak": "Explosion de concentration (imprévisible)",
+      "afternoon": "Après-midi — Baisse d'énergie",
+      "secondWind": "Deuxième souffle arrive",
+      "evening": "Activités du soir",
+      "racingMind": "L'esprit ne se calme pas",
+      "windDown": "Tentative de se détendre",
+      "sleep": "Coucher — Quand cela vient"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Protégez férocement votre créneau de 6h à 10h. Bloquez les distractions et planifiez votre tâche la plus importante pendant ce bloc de travail profond, quand votre pic cognitif est à son maximum.",
+      "2": "Planifiez les réunions et le travail collaboratif entre 13h et 15h. Votre énergie se déplace naturellement vers l'interaction sociale en début d'après-midi.",
+      "3": "Atténuez les écrans et utilisez des lunettes anti-lumière bleue après 20h. Protéger votre production de mélatonine détermine directement la qualité de votre puissante matinée du lendemain.",
+      "4": "Maintenez votre heure de réveil du week-end dans l'heure de votre horaire de semaine. Le décalage horaire social érode l'avantage matinal qui est votre plus grand avantage concurrentiel.",
+      "5": "Établissez des limites fermes sur les engagements en fin de soirée. Votre productivité est construite sur votre sommeil, et aucune réunion tardive ne vaut le sacrifice de votre prime biologique."
+    },
+    "bear": {
+      "1": "Désignez de 10h à 14h comme votre fenêtre protégée de travail profond et planifiez vos tâches les plus importantes pendant ce bloc.",
+      "2": "Une sieste de 10 à 20 minutes après le déjeuner peut restaurer efficacement votre concentration de l'après-midi et prévenir la baisse d'énergie post-déjeuner.",
+      "3": "Maintenez les mêmes horaires de sommeil et de réveil au moins 5 jours par semaine. Les Ours prospèrent avec des horaires constants plus que tout autre chronotype.",
+      "4": "L'exercice de l'après-midi (17h-19h) améliore la qualité de votre sommeil et stimule l'énergie du lendemain matin — un cycle vertueux qui vaut la peine d'être établi.",
+      "5": "Limitez la caféine aux heures du matin et évitez-la après 14h. La demi-vie de la caféine signifie qu'elle peut encore perturber votre sommeil 8 à 10 heures après la consommation."
+    },
+    "wolf": {
+      "1": "Réservez les tâches créatives et analytiques pour après 18h. C'est là que votre cerveau génère ses idées les plus originales et sa pensée la plus claire.",
+      "2": "Ne luttez pas contre les matins lents — travaillez avec eux. Utilisez la matinée pour les e-mails, l'administration et les tâches à faible enjeu comme un 'bloc d'échauffement' avant que votre moteur démarre pleinement.",
+      "3": "Maximisez l'exposition à la lumière juste après vous être réveillé. La lumière naturelle vive ou une lampe de luminothérapie est l'outil le plus efficace pour avancer votre horloge biologique.",
+      "4": "Terminez le travail profond à minuit et commencez une vraie routine de relaxation. Une période de transition de 30 à 60 minutes améliore beaucoup plus la qualité du sommeil que d'arrêter brusquement.",
+      "5": "Négociez des créneaux d'après-midi pour les réunions importantes quand c'est possible. Vous forcer à performer tôt le matin, c'est simplement brûler du carburant que vous n'avez pas encore."
+    },
+    "dolphin": {
+      "1": "Quand une explosion de concentration arrive, abandonnez tout et attaquez votre tâche la plus importante immédiatement. Vous n'avez pas de fenêtres de pic programmées, mais quand la fenêtre s'ouvre, elle est puissante.",
+      "2": "Utilisez votre lit uniquement pour dormir. Travailler dans le lit, regarder la télévision ou faire défiler votre téléphone crée une association mentale qui aggrave l'insomnie pour votre système nerveux sensible.",
+      "3": "Créez un environnement de sommeil à faible stimulation. Le bruit blanc, les rideaux occultants et une température fraîche (18-20°C) sont très efficaces pour les dormeurs légers.",
+      "4": "Soyez particulièrement prudent avec la caféine et l'alcool. Les Dauphins sont plus sensibles aux deux substances, et même de petites quantités peuvent perturber significativement votre architecture du sommeil.",
+      "5": "Arrêtez d'essayer de construire la routine parfaite. Au lieu de cela, ancrez uniquement votre heure de réveil et laissez le reste être flexible. Un point fixe est plus durable et moins stressant qu'un horaire rigide."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "Quand vous vous réveillez naturellement — sans alarme — à quelle heure ouvrez-vous généralement les yeux ?",
+      "options": {
+        "a": "5-6h — Déjà actif avant que le soleil se lève complètement",
+        "b": "7-8h — Juste le bon moment",
+        "c": "9-10h — Un départ un peu plus tardif semble naturel",
+        "d": "Ça varie chaque jour — Aucun schéma cohérent"
+      }
+    },
+    "2": {
+      "text": "À quel moment de la journée vous sentez-vous le plus énergique et mentalement alerte ?",
+      "options": {
+        "a": "Matin — Pic au petit-déjeuner, déclin l'après-midi",
+        "b": "Mi-matinée à début d'après-midi — Autour du déjeuner est mon meilleur moment",
+        "c": "Soir — Mon moteur s'allume quand le soleil se couche",
+        "d": "Imprévisible — Soudainement alerte, puis soudainement parti"
+      }
+    },
+    "3": {
+      "text": "Quel repas de la journée est celui où vous avez le plus faim et mangez le plus ?",
+      "options": {
+        "a": "Petit-déjeuner — C'est mon repas le plus important et le plus satisfaisant",
+        "b": "Déjeuner — Le plus grand repas de ma journée",
+        "c": "Dîner — Je mange mon plus grand repas le soir",
+        "d": "Aucun schéma — Je mange quand j'ai faim, les quantités varient"
+      }
+    },
+    "4": {
+      "text": "Quand votre corps répond-il le mieux et performe-t-il à son maximum pendant l'exercice ?",
+      "options": {
+        "a": "Tôt le matin (avant 6h) — Les entraînements matinaux sont géniaux",
+        "b": "Mi-matinée à midi — Une fois que mon corps est bien réveillé",
+        "c": "Soir — S'entraîner en fin de journée est ma préférence",
+        "d": "Pas de préférence — Quand j'en ai envie"
+      }
+    },
+    "5": {
+      "text": "Quand les nouvelles idées vous viennent-elles le plus naturellement et le travail créatif coule-t-il le mieux ?",
+      "options": {
+        "a": "À l'aube ou tôt le matin — Les heures tranquilles font naître ma meilleure pensée",
+        "b": "Pendant la journée — Les stimuli externes et l'activité alimentent mes idées",
+        "c": "Tard la nuit — Quand le monde se calme, mon esprit s'enflamme",
+        "d": "Explosions sporadiques — Les idées affluent aléatoirement, puis disparaissent"
+      }
+    },
+    "6": {
+      "text": "Quand vous sentez-vous le plus énergisé socialement et appréciez-vous le plus de vous connecter avec les gens ?",
+      "options": {
+        "a": "Réunions café du matin — L'énergie du nouveau départ est la meilleure",
+        "b": "Rassemblements du déjeuner — Une conversation détendue autour d'un repas est idéale",
+        "c": "Dîners ou fêtes du soir — Je suis plus social après la nuit tombée",
+        "d": "C'est une question de qui, pas de quand — En tête-à-tête, ça marche à n'importe quel moment"
+      }
+    },
+    "7": {
+      "text": "Une fois au lit, combien de temps cela vous prend-il généralement pour vous endormir ?",
+      "options": {
+        "a": "Presque instantanément — Endormi en 5 minutes",
+        "b": "En 20 minutes — Je m'endors confortablement",
+        "c": "Longtemps — Mon esprit ne s'arrête pas, souvent 30+ minutes",
+        "d": "Ça varie énormément — Parfois instantané, parfois pas avant l'aube"
+      }
+    },
+    "8": {
+      "text": "Les week-ends sans obligations, que faites-vous généralement le matin ?",
+      "options": {
+        "a": "Je me réveille à peu près à la même heure qu'en semaine — automatiquement",
+        "b": "Je dors 1 à 2 heures supplémentaires par rapport à la semaine",
+        "c": "Je dors 3+ heures de plus ou je me réveille vers midi",
+        "d": "Complètement imprévisible — aucun week-end n'est le même"
+      }
+    },
+    "9": {
+      "text": "Quelle est votre relation avec les siestes ?",
+      "options": {
+        "a": "Je n'en ai pas besoin — Je ne suis pas somnolent pendant la journée et je ne peux pas faire de sieste de toute façon",
+        "b": "Occasionnellement utiles — Une courte sieste l'après-midi est revigorante",
+        "c": "Je les adore — Une sieste l'après-midi est le moment fort de ma journée",
+        "d": "Je les veux mais ne peux pas — Trop fatigué pour fonctionner mais faire la sieste gâche mon sommeil nocturne"
+      }
+    },
+    "10": {
+      "text": "Comment se déroule typiquement une soirée pour vous ?",
+      "options": {
+        "a": "Télévision ou lecture légère, je m'endors naturellement avant 22h",
+        "b": "Lecture ou YouTube jusqu'à environ 23h, puis sommeil confortable",
+        "c": "Travail actif ou très occupé bien après minuit, coucher tardif",
+        "d": "Je m'allonge mais mon esprit s'emballe — le sommeil ne vient pas facilement quelle que soit l'heure"
+      }
+    }
+  }
+}

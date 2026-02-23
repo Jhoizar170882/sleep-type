@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Quiz de Cronotipo do Sono — Descubra seu Tipo de Sono",
+    "description": "Você é um Leão, Urso, Lobo ou Golfinho? Faça nosso quiz de 10 perguntas para descobrir seu ritmo natural de sono e otimizar sua produtividade.",
+    "ogTitle": "Qual é o seu Cronotipo do Sono? — Quiz Gratuito",
+    "ogDescription": "Descubra o tipo do seu relógio biológico com 10 perguntas simples e obtenha dicas personalizadas de sono e produtividade."
+  },
+  "nav": {
+    "logo": "Quiz de Tipo de Sono",
+    "language": "Idioma"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "auto": "Auto"
+  },
+  "footer": {
+    "tagline": "Compreender seu ritmo é a base da otimização pessoal.",
+    "copyright": "© 2026 Sleep Type Quiz. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
+  },
+  "landing": {
+    "badge": "Análise do Sono Baseada em Ciência",
+    "title": "Qual é o seu\nCronotipo do Sono?",
+    "subtitle": "Descubra seu ritmo biológico natural com apenas 10 perguntas. Você é um Leão, Urso, Lobo ou Golfinho — e o que isso significa para sua saúde e produtividade?",
+    "startButton": "Fazer o Quiz",
+    "statsLabel1": "Pessoas Testadas",
+    "statsValue1": "240K+",
+    "statsLabel2": "Tempo para Completar",
+    "statsValue2": "3 min",
+    "statsLabel3": "Taxa de Precisão",
+    "statsValue3": "92%",
+    "typesTitle": "4 Tipos de Cronotipo",
+    "typesSubtitle": "Cada pessoa tem um relógio biológico único. Conhecer seu tipo permite otimizar o sono, trabalho, exercício e refeições para o máximo desempenho.",
+    "scienceTitle": "Por que seu Cronotipo é Importante?",
+    "scienceText": "Um cronotipo é mais do que ser uma 'pessoa matutina' ou 'noturna'. É um traço biológico complexo moldado pela genética, hormônios e seu sistema nervoso. Viver em alinhamento com seu cronotipo pode melhorar dramaticamente a qualidade do sono, o foco e os níveis de energia diários.",
+    "howItWorksTitle": "Como Funciona",
+    "howItWorksSteps": [
+      "Responda honestamente 10 perguntas sobre seus hábitos diários",
+      "Nosso algoritmo analisa suas pontuações para identificar seu cronotipo",
+      "Obtenha seu roteiro personalizado de sono e produtividade"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Pergunta",
+    "of": "de",
+    "progress": "{{current}} de {{total}}",
+    "next": "Próximo",
+    "back": "Anterior",
+    "submit": "Ver meus Resultados",
+    "selectOption": "Por favor selecione uma opção",
+    "almostDone": "Quase lá!",
+    "goodProgress": "Ótimo progresso!",
+    "halfwayThere": "Na metade do caminho!"
+  },
+  "result": {
+    "loading": "Analisando...",
+    "yourTypeIs": "Seu cronotipo é",
+    "typeLabel": "Cronotipo",
+    "populationText": "Cerca de {{percentage}}% da população compartilha este tipo",
+    "timelineTitle": "Sua Linha do Tempo Diária Ideal",
+    "timelineSubtitle": "Alinhar suas atividades a estas janelas pode desbloquear energia e foco notavelmente maiores.",
+    "tipsTitle": "Dicas de Produtividade para {{type}}s",
+    "tipsSubtitle": "Estratégias práticas para viver em sincronia com seu ritmo natural.",
+    "shareTitle": "Compartilhe seus Resultados",
+    "shareText": "Sou um cronotipo {{type}}! Qual é o seu?",
+    "shareButton": "Compartilhar",
+    "copyLink": "Copiar Link",
+    "copySuccess": "Link copiado!",
+    "retakeButton": "Refazer o Quiz",
+    "otherTypesTitle": "Explorar Outros Cronotipos",
+    "scoreBreakdownTitle": "Detalhamento da Pontuação",
+    "yourScore": "Sua Pontuação"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "Leão",
+      "fullName": "O Leão Matutino",
+      "shortDesc": "O madrugador que conquista o mundo ao amanhecer",
+      "description": "Você é uma verdadeira pessoa matutina que já está em pleno funcionamento antes que a maioria acorde. Sua mente está mais aguçada nas primeiras horas, e você faz seu melhor trabalho antes do meio-dia. À noite, sua energia diminui naturalmente e dormir cedo parece uma recompensa, não um sacrifício.",
+      "traits": ["Madrugador", "Foco máximo pela manhã", "Cansa cedo à noite", "Altamente disciplinado", "Grande força de vontade"]
+    },
+    "bear": {
+      "name": "Urso",
+      "fullName": "O Urso Solar",
+      "shortDesc": "O tipo equilibrado que segue o ritmo do sol",
+      "description": "Você pertence ao cronotipo mais comum, representando mais da metade da população. Seu ritmo segue o sol — acordando naturalmente com a luz do dia e desacelerando após o escurecer. Você atinge o pico de desempenho cognitivo entre 10h e 14h, e é bem adaptado aos horários sociais e de trabalho padrão. Sono consistente é seu superpoder.",
+      "traits": ["Ciclo de sono equilibrado", "Foco máximo do meio da manhã ao meio-dia", "Bem adaptado a horários sociais", "Energia estável", "Forte colaborador"]
+    },
+    "wolf": {
+      "name": "Lobo",
+      "fullName": "O Lobo Noturno",
+      "shortDesc": "O pensador noturno cujo poder desperta após o anoitecer",
+      "description": "Você é um noctívago de coração, levando muito tempo para entrar no ritmo pela manhã, mas ganhando vida nas horas vespertinas. Após as 17h, sua energia e criatividade aumentam vertiginosamente, e suas melhores ideias frequentemente chegam após a meia-noite. Você frequentemente experimenta o 'jet lag social' — a fadiga de se forçar a operar em um horário que não corresponde à sua biologia.",
+      "traits": ["Dorme tarde", "Foco máximo à noite", "Pensador criativo", "Energia noturna", "Capacidade de foco profundo"]
+    },
+    "dolphin": {
+      "name": "Golfinho",
+      "fullName": "O Golfinho Dormidor Leve",
+      "shortDesc": "O tipo hiperconsciente com um relógio interno imprevisível",
+      "description": "Como o golfinho que dorme com metade do cérebro acordado, você é um dormidor leve, frequentemente inquieto, com um ritmo irregular. Sua concentração vem em explosões imprevisíveis, e você é muito sensível ao estresse, ruído e mudanças ambientais. No entanto, você tende a ser altamente inteligente e um solucionador criativo de problemas com uma mente intensamente curiosa.",
+      "traits": ["Dormidor leve", "Padrões irregulares", "Alta inteligência", "Sensível a estímulos", "Explosões intensas de foco"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Acordar — Fresco e pronto",
+      "exercise": "Exercício — Energizar o corpo",
+      "breakfast": "Café da manhã — Combustível para o dia",
+      "deepWork": "Trabalho profundo começa",
+      "peakFocus": "Janela de foco máximo",
+      "lunch": "Pausa para o almoço",
+      "meetings": "Reuniões e colaboração",
+      "windDown": "Energia começa a diminuir",
+      "relax": "Leitura leve ou relaxamento",
+      "sleep": "Hora de dormir — Recarregar para amanhã"
+    },
+    "bear": {
+      "wake": "Acordar — Rotina matutina relaxada",
+      "breakfast": "Café da manhã",
+      "commute": "Deslocamento ou início do dia",
+      "peakFocus": "Janela de foco máximo",
+      "lunch": "Almoço — Um reset no meio do dia",
+      "collaboration": "Colaboração e reuniões",
+      "exercise": "Exercício pós-trabalho",
+      "dinner": "Jantar",
+      "windDown": "Descansar e relaxar",
+      "sleep": "Hora de dormir"
+    },
+    "wolf": {
+      "wake": "Acordar — Início lento",
+      "slowStart": "Aquecimento lento, hora do café",
+      "brunch": "Brunch",
+      "warming": "Entrando gradualmente no ritmo",
+      "peakFocus": "Energia subindo — trabalho profundo começa",
+      "dinner": "Jantar",
+      "creativeWork": "Trabalho criativo e projetos profundos",
+      "social": "Atividades sociais ou hobbies",
+      "windDown": "Relaxar, descomprimir",
+      "sleep": "Hora de dormir — Final da madrugada"
+    },
+    "dolphin": {
+      "wake": "Acordar — Horário irregular",
+      "lightSleep": "Sono leve, despertar frequente",
+      "morning": "Rotina matutina (inconsistente)",
+      "sporadicPeak": "Explosão de foco (imprevisível)",
+      "afternoon": "Tarde — Queda de energia",
+      "secondWind": "Segundo fôlego chega",
+      "evening": "Atividades vespertinas",
+      "racingMind": "Mente não para",
+      "windDown": "Tentando descansar",
+      "sleep": "Hora de dormir — Quando vier"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Proteja ferozmente sua janela das 6h às 10h. Bloqueie distrações e programe sua tarefa mais importante durante este bloco de trabalho profundo quando seu pico cognitivo está no máximo.",
+      "2": "Agende reuniões e trabalho colaborativo entre 13h e 15h. Sua energia se desloca naturalmente para a interação social no início da tarde.",
+      "3": "Diminua as telas e use óculos bloqueadores de luz azul após as 20h. Proteger a produção de melatonina determina diretamente a qualidade de sua manhã poderosa do dia seguinte.",
+      "4": "Mantenha seu horário de acordar no fim de semana dentro de uma hora do seu cronograma durante a semana. O jet lag social corrói a vantagem matinal que é sua maior vantagem competitiva.",
+      "5": "Estabeleça limites firmes em compromissos no final da noite. Sua produtividade é construída sobre seu sono, e nenhuma reunião tardia vale sacrificar seu tempo prime biológico."
+    },
+    "bear": {
+      "1": "Designe das 10h às 14h como sua janela protegida de trabalho profundo e agende suas tarefas mais importantes durante este bloco.",
+      "2": "Um cochilo de 10 a 20 minutos após o almoço pode restaurar efetivamente seu foco da tarde e evitar a queda de energia pós-almoço.",
+      "3": "Mantenha os mesmos horários de sono e acordar pelo menos 5 dias por semana. Ursos prosperam com horários consistentes mais do que qualquer outro cronotipo.",
+      "4": "Exercício vespertino (17h-19h) melhora a qualidade do sono e aumenta a energia da manhã seguinte — um ciclo virtuoso que vale a pena estabelecer.",
+      "5": "Limite a cafeína às horas da manhã e evite-a após as 14h. A meia-vida da cafeína significa que ela ainda pode perturbar o sono 8-10 horas após o consumo."
+    },
+    "wolf": {
+      "1": "Reserve tarefas criativas e analíticas para após as 18h. É quando seu cérebro gera suas ideias mais originais e pensamento mais claro.",
+      "2": "Não lute contra as manhãs lentas — trabalhe com elas. Use a manhã para e-mails, administração e tarefas de baixo risco como um 'bloco de aquecimento' antes que seu motor ligue completamente.",
+      "3": "Maximize a exposição à luz logo após acordar. Luz natural brilhante ou uma lâmpada de fototerapia é a ferramenta mais eficaz para adiantar seu relógio biológico.",
+      "4": "Termine o trabalho profundo à meia-noite e comece uma rotina genuína de descanso. Um período de transição de 30 a 60 minutos melhora muito mais a qualidade do sono do que parar abruptamente.",
+      "5": "Negocie horários da tarde para reuniões importantes quando possível. Forçar-se a ter desempenho no início da manhã é simplesmente queimar combustível que você ainda não tem."
+    },
+    "dolphin": {
+      "1": "Quando uma explosão de foco chegar, largue tudo e ataque sua tarefa mais importante imediatamente. Você não tem janelas de pico programadas, mas quando a janela abre, é poderosa.",
+      "2": "Use sua cama apenas para dormir. Trabalhar na cama, assistir TV ou rolar o telefone cria uma associação mental que piora a insônia para seu sistema nervoso sensível.",
+      "3": "Crie um ambiente de sono de baixa estimulação. Ruído branco, cortinas blackout e temperatura fresca do quarto (18-20°C) são muito eficazes para dormidores leves.",
+      "4": "Seja especialmente cuidadoso com cafeína e álcool. Golfinhos são mais sensíveis a ambas as substâncias, e mesmo pequenas quantidades podem perturbar significativamente sua arquitetura do sono.",
+      "5": "Pare de tentar construir a rotina perfeita. Em vez disso, ancore apenas seu horário de acordar e deixe o resto ser flexível. Um ponto fixo é mais sustentável e menos estressante do que um horário rígido."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "Quando você acorda naturalmente — sem alarme — que horas você geralmente abre os olhos?",
+      "options": {
+        "a": "5-6h — Já ativo antes do sol nascer completamente",
+        "b": "7-8h — O momento certo",
+        "c": "9-10h — Um início um pouco mais tarde parece natural",
+        "d": "Varia todo dia — Sem padrão consistente"
+      }
+    },
+    "2": {
+      "text": "Em que período do dia você se sente mais energético e mentalmente afiado?",
+      "options": {
+        "a": "Manhã — Pico no café da manhã, diminuindo à tarde",
+        "b": "Meio da manhã ao início da tarde — Por volta do almoço é meu melhor momento",
+        "c": "Noite — Meu motor liga quando o sol se põe",
+        "d": "Imprevisível — De repente afiado, depois de repente some"
+      }
+    },
+    "3": {
+      "text": "Qual refeição do dia você tem mais fome e come mais?",
+      "options": {
+        "a": "Café da manhã — É minha refeição mais importante e satisfatória",
+        "b": "Almoço — A maior refeição do meu dia",
+        "c": "Jantar — Como minha maior refeição à noite",
+        "d": "Sem padrão — Como quando tenho fome, quantidades variam"
+      }
+    },
+    "4": {
+      "text": "Quando seu corpo responde melhor e tem desempenho máximo durante o exercício?",
+      "options": {
+        "a": "De manhã cedo (antes das 6h) — Treinos matinais parecem incríveis",
+        "b": "Meio da manhã ao meio-dia — Quando meu corpo está totalmente acordado",
+        "c": "Noite — Treinar no final do dia é minha preferência",
+        "d": "Sem preferência — Quando der vontade"
+      }
+    },
+    "5": {
+      "text": "Quando novas ideias chegam mais naturalmente e o trabalho criativo flui melhor?",
+      "options": {
+        "a": "Amanhecer ou início da manhã — Horas tranquilas geram meu melhor pensamento",
+        "b": "Durante o dia — Estímulos externos e atividade alimentam minhas ideias",
+        "c": "Tarde da noite — Quando o mundo fica quieto, minha mente se acende",
+        "d": "Explosões esporádicas — Ideias chegam aleatoriamente, depois desaparecem"
+      }
+    },
+    "6": {
+      "text": "Quando você se sente mais energizado socialmente e aprecia se conectar com pessoas?",
+      "options": {
+        "a": "Reuniões de café pela manhã — A energia do começo fresco é a melhor",
+        "b": "Encontros de almoço — Conversa relaxada durante a refeição é ideal",
+        "c": "Jantares ou festas à noite — Sou mais social após escurecer",
+        "d": "É sobre quem, não quando — Um a um funciona a qualquer hora"
+      }
+    },
+    "7": {
+      "text": "Uma vez na cama, quanto tempo normalmente leva para adormecer?",
+      "options": {
+        "a": "Quase instantaneamente — Adormecido em 5 minutos",
+        "b": "Em 20 minutos — Adormeço confortavelmente",
+        "c": "Muito tempo — Minha mente não para, frequentemente 30+ minutos",
+        "d": "Varia muito — Às vezes instantâneo, às vezes só ao amanhecer"
+      }
+    },
+    "8": {
+      "text": "Nos fins de semana sem obrigações, o que você tipicamente faz pela manhã?",
+      "options": {
+        "a": "Acordo aproximadamente no mesmo horário que nos dias de semana — automaticamente",
+        "b": "Durmo 1-2 horas a mais em comparação com os dias de semana",
+        "c": "Durmo 3+ horas a mais ou acordo por volta do meio-dia",
+        "d": "Completamente imprevisível — nenhum fim de semana é igual"
+      }
+    },
+    "9": {
+      "text": "Qual é sua relação com cochilos?",
+      "options": {
+        "a": "Não preciso — Não fico sonolento durante o dia e de qualquer forma não consigo cochilar",
+        "b": "Ocasionalmente útil — Um curto cochilo vespertino é revigorante",
+        "c": "Amo — Um cochilo vespertino é o ponto alto do meu dia",
+        "d": "Quero mas não consigo — Cansado demais para funcionar mas cochilar estraga meu sono noturno"
+      }
+    },
+    "10": {
+      "text": "Como uma noite típica acaba para você?",
+      "options": {
+        "a": "TV ou leitura leve, adormeço naturalmente antes das 22h",
+        "b": "Lendo ou no YouTube até por volta das 23h, depois sono confortável",
+        "c": "Trabalhando ativamente ou engajado bem depois da meia-noite, deito tarde",
+        "d": "Me deito mas minha mente acelera — o sono não vem facilmente independente do horário"
+      }
+    }
+  }
+}

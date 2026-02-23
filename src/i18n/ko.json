@@ -9,6 +9,11 @@
     "logo": "수면 유형 테스트",
     "language": "Language"
   },
+  "theme": {
+    "light": "라이트",
+    "dark": "다크",
+    "auto": "자동"
+  },
   "footer": {
     "tagline": "내 몸의 리듬을 이해하는 것이 최고의 자기계발입니다.",
     "copyright": "© 2026 수면 유형 테스트. 모든 권리 보유.",
@@ -17,7 +22,15 @@
   },
   "language": {
     "ko": "한국어",
-    "en": "English"
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
   },
   "landing": {
     "badge": "과학 기반 수면 분석",

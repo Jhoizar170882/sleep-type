@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Trắc Nghiệm Chronotype Giấc Ngủ — Khám Phá Kiểu Ngủ Của Bạn",
+    "description": "Bạn là Sư Tử, Gấu, Sói hay Cá Heo? Làm bài trắc nghiệm 10 câu để khám phá nhịp ngủ tự nhiên và tối ưu hóa năng suất của bạn.",
+    "ogTitle": "Chronotype Giấc Ngủ Của Bạn Là Gì? — Trắc Nghiệm Miễn Phí",
+    "ogDescription": "Tìm hiểu loại đồng hồ sinh học của bạn qua 10 câu hỏi đơn giản và nhận lời khuyên cá nhân hóa về giấc ngủ và năng suất."
+  },
+  "nav": {
+    "logo": "Trắc Nghiệm Kiểu Ngủ",
+    "language": "Ngôn ngữ"
+  },
+  "theme": {
+    "light": "Sáng",
+    "dark": "Tối",
+    "auto": "Tự động"
+  },
+  "footer": {
+    "tagline": "Hiểu nhịp sinh học của bạn là nền tảng của việc tự tối ưu hóa bản thân.",
+    "copyright": "© 2026 Sleep Type Quiz. Bảo lưu mọi quyền.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
+  },
+  "landing": {
+    "badge": "Phân Tích Giấc Ngủ Dựa Trên Khoa Học",
+    "title": "Chronotype Giấc Ngủ\nCủa Bạn Là Gì?",
+    "subtitle": "Khám phá nhịp sinh học tự nhiên của bạn chỉ với 10 câu hỏi. Bạn là Sư Tử, Gấu, Sói hay Cá Heo — và điều đó có ý nghĩa gì với sức khỏe và năng suất của bạn?",
+    "startButton": "Bắt Đầu Trắc Nghiệm",
+    "statsLabel1": "Người Đã Tham Gia",
+    "statsValue1": "240K+",
+    "statsLabel2": "Thời Gian Hoàn Thành",
+    "statsValue2": "3 phút",
+    "statsLabel3": "Độ Chính Xác",
+    "statsValue3": "92%",
+    "typesTitle": "4 Loại Chronotype",
+    "typesSubtitle": "Mỗi người có đồng hồ sinh học riêng. Biết loại của bạn giúp tối ưu giấc ngủ, công việc, tập thể dục và bữa ăn để đạt hiệu suất tối đa.",
+    "scienceTitle": "Tại Sao Chronotype Quan Trọng?",
+    "scienceText": "Chronotype không chỉ đơn giản là 'người buổi sáng' hay 'người buổi tối'. Đây là đặc điểm sinh học phức tạp được định hình bởi gen, hormone và hệ thần kinh. Sống phù hợp với chronotype có thể cải thiện đáng kể chất lượng giấc ngủ, khả năng tập trung và mức năng lượng hàng ngày.",
+    "howItWorksTitle": "Cách Thức Hoạt Động",
+    "howItWorksSteps": [
+      "Trả lời trung thực 10 câu hỏi về thói quen hàng ngày của bạn",
+      "Thuật toán phân tích điểm số để xác định chronotype của bạn",
+      "Nhận lộ trình giấc ngủ và năng suất được cá nhân hóa"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Câu",
+    "of": "trên",
+    "progress": "{{current}} trên {{total}}",
+    "next": "Tiếp theo",
+    "back": "Quay lại",
+    "submit": "Xem Kết Quả",
+    "selectOption": "Vui lòng chọn một đáp án",
+    "almostDone": "Gần xong rồi!",
+    "goodProgress": "Tiến triển tốt!",
+    "halfwayThere": "Đã đi được nửa đường!"
+  },
+  "result": {
+    "loading": "Đang phân tích...",
+    "yourTypeIs": "Chronotype của bạn là",
+    "typeLabel": "Chronotype",
+    "populationText": "Khoảng {{percentage}}% dân số có chung kiểu này",
+    "timelineTitle": "Lịch Trình Hàng Ngày Tối Ưu Của Bạn",
+    "timelineSubtitle": "Sắp xếp các hoạt động theo các khung giờ này có thể mang lại năng lượng và sự tập trung cao hơn đáng kể.",
+    "tipsTitle": "Mẹo Năng Suất Cho Kiểu {{type}}",
+    "tipsSubtitle": "Các chiến lược thực tế để sống hài hòa với nhịp tự nhiên của bạn.",
+    "shareTitle": "Chia Sẻ Kết Quả",
+    "shareText": "Tôi là chronotype {{type}}! Bạn thì sao?",
+    "shareButton": "Chia sẻ",
+    "copyLink": "Sao Chép Liên Kết",
+    "copySuccess": "Đã sao chép liên kết!",
+    "retakeButton": "Làm Lại Trắc Nghiệm",
+    "otherTypesTitle": "Khám Phá Các Chronotype Khác",
+    "scoreBreakdownTitle": "Phân Tích Điểm Số",
+    "yourScore": "Điểm Của Bạn"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "Sư Tử",
+      "fullName": "Sư Tử Buổi Sáng",
+      "shortDesc": "Người dậy sớm chinh phục thế giới từ bình minh",
+      "description": "Bạn là người buổi sáng thực sự, đã hoạt động hết công suất trước khi hầu hết mọi người thức dậy. Tâm trí bạn sắc bén nhất vào những giờ đầu, và bạn làm tốt nhất trước buổi trưa. Đến tối, năng lượng giảm tự nhiên và đi ngủ sớm cảm giác như phần thưởng, không phải hy sinh.",
+      "traits": ["Dậy sớm", "Tập trung tốt nhất buổi sáng", "Mệt mỏi sớm vào buổi tối", "Kỷ luật cao", "Ý chí mạnh mẽ"]
+    },
+    "bear": {
+      "name": "Gấu",
+      "fullName": "Gấu Mặt Trời",
+      "shortDesc": "Kiểu cân bằng theo nhịp của mặt trời",
+      "description": "Bạn thuộc chronotype phổ biến nhất, chiếm hơn nửa dân số. Nhịp sinh học của bạn theo mặt trời — thức dậy tự nhiên khi có ánh sáng và nghỉ ngơi sau khi trời tối. Bạn đạt hiệu suất nhận thức cao nhất từ 10 giờ đến 14 giờ, và rất phù hợp với lịch làm việc và xã hội tiêu chuẩn. Giấc ngủ đều đặn là siêu năng lực của bạn.",
+      "traits": ["Chu kỳ ngủ cân bằng", "Tập trung tốt nhất từ giữa sáng đến trưa", "Phù hợp lịch xã hội", "Năng lượng ổn định", "Cộng tác tốt"]
+    },
+    "wolf": {
+      "name": "Sói",
+      "fullName": "Sói Buổi Tối",
+      "shortDesc": "Người suy nghĩ về đêm, sức mạnh thức dậy sau khi trời tối",
+      "description": "Bạn là người về đêm thực sự, mất nhiều thời gian để khởi động vào buổi sáng nhưng bừng tỉnh vào buổi chiều tối. Sau 17 giờ, năng lượng và sự sáng tạo của bạn tăng vọt, và ý tưởng tốt nhất thường đến sau nửa đêm. Bạn thường trải qua 'lệch múi giờ xã hội' — sự mệt mỏi khi phải hoạt động theo lịch không phù hợp với sinh lý học của mình.",
+      "traits": ["Dậy muộn", "Tập trung tốt nhất buổi tối", "Tư duy sáng tạo", "Năng lượng về đêm", "Khả năng tập trung sâu"]
+    },
+    "dolphin": {
+      "name": "Cá Heo",
+      "fullName": "Cá Heo Ngủ Nhẹ",
+      "shortDesc": "Kiểu siêu nhạy cảm với đồng hồ nội tâm khó đoán",
+      "description": "Giống như cá heo ngủ với một nửa bộ não thức, bạn là người ngủ nhẹ, thường bồn chồn với nhịp sinh học không đều. Sự tập trung của bạn xuất hiện theo những đợt khó đoán, và bạn rất nhạy cảm với stress, tiếng ồn và thay đổi môi trường. Tuy nhiên, bạn có xu hướng rất thông minh và giỏi giải quyết vấn đề sáng tạo với trí tò mò mãnh liệt.",
+      "traits": ["Ngủ nhẹ", "Chu kỳ không đều", "Trí tuệ cao", "Nhạy cảm với kích thích", "Tập trung bùng phát mạnh mẽ"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Thức dậy — Tươi tắn và sẵn sàng",
+      "exercise": "Tập thể dục — Kích hoạt cơ thể",
+      "breakfast": "Ăn sáng — Nạp năng lượng cho ngày",
+      "deepWork": "Bắt đầu làm việc sâu",
+      "peakFocus": "Khung giờ tập trung tối đa",
+      "lunch": "Nghỉ ăn trưa",
+      "meetings": "Họp và cộng tác",
+      "windDown": "Năng lượng bắt đầu giảm",
+      "relax": "Đọc sách nhẹ nhàng hoặc thư giãn",
+      "sleep": "Đi ngủ — Nạp năng lượng cho ngày mai"
+    },
+    "bear": {
+      "wake": "Thức dậy — Buổi sáng thư thái",
+      "breakfast": "Ăn sáng",
+      "commute": "Đi làm hoặc bắt đầu ngày",
+      "peakFocus": "Khung giờ tập trung tối đa",
+      "lunch": "Ăn trưa — Nghỉ ngơi giữa ngày",
+      "collaboration": "Cộng tác và họp",
+      "exercise": "Tập thể dục sau giờ làm",
+      "dinner": "Ăn tối",
+      "windDown": "Thư giãn và nghỉ ngơi",
+      "sleep": "Đi ngủ"
+    },
+    "wolf": {
+      "wake": "Thức dậy — Khởi đầu chậm",
+      "slowStart": "Khởi động chậm, uống cà phê",
+      "brunch": "Ăn brunch",
+      "warming": "Dần dần vào guồng",
+      "peakFocus": "Năng lượng tăng — bắt đầu làm việc sâu",
+      "dinner": "Ăn tối",
+      "creativeWork": "Công việc sáng tạo và dự án sâu",
+      "social": "Hoạt động xã hội hoặc sở thích",
+      "windDown": "Thư giãn, giải tỏa",
+      "sleep": "Đi ngủ — Kết thúc đêm muộn"
+    },
+    "dolphin": {
+      "wake": "Thức dậy — Giờ giấc không đều",
+      "lightSleep": "Ngủ nhẹ, thức giấc thường xuyên",
+      "morning": "Buổi sáng (không nhất quán)",
+      "sporadicPeak": "Tập trung bùng phát (khó đoán)",
+      "afternoon": "Buổi chiều — Năng lượng xuống",
+      "secondWind": "Làn sóng năng lượng thứ hai đến",
+      "evening": "Hoạt động buổi tối",
+      "racingMind": "Tâm trí không yên",
+      "windDown": "Cố gắng thư giãn",
+      "sleep": "Đi ngủ — Khi nào đến thì đến"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Bảo vệ mạnh mẽ khung giờ 6-10 giờ sáng. Loại bỏ phiền nhiễu và lên lịch nhiệm vụ quan trọng nhất trong khối làm việc sâu này khi đỉnh nhận thức đạt cao nhất.",
+      "2": "Lên lịch họp và làm việc cộng tác từ 13-15 giờ. Năng lượng của bạn tự nhiên chuyển sang tương tác xã hội vào đầu buổi chiều.",
+      "3": "Giảm độ sáng màn hình và dùng kính lọc ánh sáng xanh sau 20 giờ. Bảo vệ sản xuất melatonin trực tiếp quyết định chất lượng buổi sáng hôm sau.",
+      "4": "Giữ giờ thức dậy cuối tuần trong vòng một tiếng so với ngày thường. Lệch múi giờ xã hội làm mòn lợi thế buổi sáng — vũ khí cạnh tranh lớn nhất của bạn.",
+      "5": "Đặt giới hạn rõ ràng với các cam kết vào cuối tối. Năng suất của bạn được xây dựng trên giấc ngủ, và không có cuộc họp nào đêm khuya đáng đổi thời gian vàng sinh học của bạn."
+    },
+    "bear": {
+      "1": "Xác định 10-14 giờ là khung giờ làm việc sâu được bảo vệ và lên lịch các nhiệm vụ quan trọng nhất trong khoảng này.",
+      "2": "Chợp mắt 10-20 phút sau bữa trưa có thể khôi phục hiệu quả sự tập trung buổi chiều và ngăn tình trạng uể oải sau ăn.",
+      "3": "Duy trì giờ ngủ và thức dậy cố định ít nhất 5 ngày mỗi tuần. Kiểu Gấu phát triển tốt nhất với lịch trình nhất quán hơn bất kỳ chronotype nào khác.",
+      "4": "Tập thể dục buổi chiều (17-19 giờ) cải thiện chất lượng giấc ngủ và tăng năng lượng buổi sáng hôm sau — vòng tuần hoàn tích cực đáng xây dựng.",
+      "5": "Giới hạn caffeine vào buổi sáng và tránh sau 14 giờ. Thời gian bán hủy của caffeine có nghĩa nó vẫn có thể làm rối giấc ngủ 8-10 tiếng sau khi uống."
+    },
+    "wolf": {
+      "1": "Để dành công việc sáng tạo và phân tích cho sau 18 giờ. Đó là khi não bạn tạo ra những ý tưởng độc đáo nhất và tư duy sáng suốt nhất.",
+      "2": "Đừng chống lại buổi sáng chậm — hãy thuận theo. Dùng buổi sáng cho email, hành chính và các nhiệm vụ ít quan trọng như 'khối khởi động' trước khi động cơ hoạt động đầy đủ.",
+      "3": "Tối đa hóa tiếp xúc ánh sáng ngay sau khi thức dậy. Ánh sáng tự nhiên mạnh hoặc đèn trị liệu ánh sáng là công cụ hiệu quả nhất để đẩy đồng hồ sinh học lên sớm hơn.",
+      "4": "Kết thúc làm việc sâu trước nửa đêm và bắt đầu thói quen thư giãn thực sự. Thời gian chuyển tiếp 30-60 phút cải thiện chất lượng giấc ngủ nhiều hơn so với dừng đột ngột.",
+      "5": "Thương lượng các khung giờ chiều cho các cuộc họp quan trọng khi có thể. Tự ép hiệu suất vào sáng sớm chỉ là đốt nhiên liệu mà bạn chưa có."
+    },
+    "dolphin": {
+      "1": "Khi làn sóng tập trung ập đến, bỏ mọi thứ và tấn công ngay nhiệm vụ quan trọng nhất. Bạn không có khung giờ đỉnh theo lịch, nhưng khi cửa sổ mở ra, nó rất mạnh mẽ.",
+      "2": "Chỉ dùng giường để ngủ. Làm việc trên giường, xem TV hay lướt điện thoại tạo ra liên kết tâm lý làm trầm trọng thêm chứng mất ngủ cho hệ thần kinh nhạy cảm của bạn.",
+      "3": "Tạo môi trường ngủ ít kích thích. Tiếng ồn trắng, rèm che sáng và nhiệt độ phòng mát (18-20°C) rất hiệu quả cho người ngủ nhẹ.",
+      "4": "Đặc biệt cẩn thận với caffeine và rượu. Kiểu Cá Heo nhạy cảm hơn với cả hai chất, và ngay cả lượng nhỏ cũng có thể làm rối loạn đáng kể cấu trúc giấc ngủ của bạn.",
+      "5": "Ngừng cố gắng xây dựng thói quen hoàn hảo. Thay vào đó, chỉ cố định giờ thức dậy và để phần còn lại linh hoạt. Một điểm cố định bền vững hơn và ít căng thẳng hơn lịch trình cứng nhắc."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "Khi bạn thức dậy tự nhiên — không có báo thức — bạn thường mở mắt lúc mấy giờ?",
+      "options": {
+        "a": "5-6 giờ sáng — Đã hoạt động trước khi mặt trời mọc hoàn toàn",
+        "b": "7-8 giờ sáng — Đúng thời điểm",
+        "c": "9-10 giờ sáng — Bắt đầu hơi muộn một chút cảm thấy tự nhiên",
+        "d": "Thay đổi mỗi ngày — Không có quy luật nhất quán"
+      }
+    },
+    "2": {
+      "text": "Vào thời điểm nào trong ngày bạn cảm thấy tràn đầy năng lượng và tâm trí sắc bén nhất?",
+      "options": {
+        "a": "Buổi sáng — Đỉnh cao lúc ăn sáng, giảm dần vào chiều",
+        "b": "Giữa sáng đến đầu chiều — Khoảng bữa trưa là tốt nhất",
+        "c": "Buổi tối — Động cơ của tôi bật lên khi mặt trời lặn",
+        "d": "Không thể đoán — Đột nhiên sắc bén, rồi đột nhiên mất"
+      }
+    },
+    "3": {
+      "text": "Bữa ăn nào trong ngày bạn đói nhất và ăn nhiều nhất?",
+      "options": {
+        "a": "Bữa sáng — Đây là bữa quan trọng và thỏa mãn nhất",
+        "b": "Bữa trưa — Bữa ăn lớn nhất trong ngày",
+        "c": "Bữa tối — Tôi ăn nhiều nhất vào buổi tối",
+        "d": "Không có quy luật — Ăn khi đói, lượng thay đổi"
+      }
+    },
+    "4": {
+      "text": "Khi nào cơ thể bạn phản ứng tốt nhất và đạt hiệu suất cao nhất khi tập thể dục?",
+      "options": {
+        "a": "Sáng sớm (trước 6 giờ) — Tập buổi sáng cảm giác tuyệt vời",
+        "b": "Giữa sáng đến trưa — Khi cơ thể đã thức đủ",
+        "c": "Buổi tối — Tập vào cuối ngày là sở thích của tôi",
+        "d": "Không có sở thích — Khi thấy muốn thì tập"
+      }
+    },
+    "5": {
+      "text": "Khi nào những ý tưởng mới đến tự nhiên nhất và công việc sáng tạo diễn ra tốt nhất?",
+      "options": {
+        "a": "Bình minh hoặc sáng sớm — Những giờ yên tĩnh thắp sáng tư duy tốt nhất",
+        "b": "Ban ngày — Kích thích bên ngoài và hoạt động nuôi dưỡng ý tưởng",
+        "c": "Đêm muộn — Khi thế giới yên lặng, tâm trí tôi bùng cháy",
+        "d": "Bùng phát lẻ tẻ — Ý tưởng ào đến ngẫu nhiên, rồi biến mất"
+      }
+    },
+    "6": {
+      "text": "Khi nào bạn cảm thấy tràn đầy năng lượng xã hội và thích giao lưu với mọi người nhất?",
+      "options": {
+        "a": "Họp cà phê buổi sáng — Năng lượng khởi đầu tươi mới là tốt nhất",
+        "b": "Tụ tập bữa trưa — Trò chuyện thoải mái trong bữa ăn là lý tưởng",
+        "c": "Bữa tối hoặc tiệc tối — Tôi hòa đồng nhất sau khi trời tối",
+        "d": "Quan trọng là ai, không phải khi nào — Một đối một thì lúc nào cũng được"
+      }
+    },
+    "7": {
+      "text": "Khi đã nằm xuống giường, thường mất bao lâu để bạn ngủ được?",
+      "options": {
+        "a": "Gần như ngay lập tức — Ngủ trong vòng 5 phút",
+        "b": "Trong vòng 20 phút — Ngủ một cách thoải mái",
+        "c": "Rất lâu — Tâm trí không ngừng, thường hơn 30 phút",
+        "d": "Thay đổi nhiều — Đôi khi ngay lập tức, đôi khi đến tận bình minh"
+      }
+    },
+    "8": {
+      "text": "Vào cuối tuần không có việc gì, bạn thường làm gì vào buổi sáng?",
+      "options": {
+        "a": "Thức dậy gần như cùng giờ ngày thường — tự nhiên",
+        "b": "Ngủ thêm 1-2 tiếng so với ngày thường",
+        "c": "Ngủ thêm 3+ tiếng hoặc thức dậy khoảng trưa",
+        "d": "Hoàn toàn không đoán được — không cuối tuần nào giống nhau"
+      }
+    },
+    "9": {
+      "text": "Mối quan hệ của bạn với giấc ngủ ngắn như thế nào?",
+      "options": {
+        "a": "Không cần — Không buồn ngủ ban ngày và cũng không thể chợp mắt",
+        "b": "Đôi khi hữu ích — Chợp mắt ngắn vào chiều là sảng khoái",
+        "c": "Rất thích — Giấc ngủ ngắn buổi chiều là điểm sáng trong ngày",
+        "d": "Muốn nhưng không được — Quá mệt mỏi nhưng ngủ ngắn lại phá hỏng giấc ngủ đêm"
+      }
+    },
+    "10": {
+      "text": "Buổi tối điển hình của bạn kết thúc như thế nào?",
+      "options": {
+        "a": "Xem TV hoặc đọc nhẹ nhàng, tự nhiên ngủ quên trước 22 giờ",
+        "b": "Đọc sách hoặc YouTube đến khoảng 23 giờ, rồi ngủ thoải mái",
+        "c": "Hoạt động tích cực hoặc bận rộn đến sau nửa đêm, đi ngủ muộn",
+        "d": "Nằm xuống nhưng tâm trí vẫn chạy — giấc ngủ không đến dễ dàng dù mấy giờ"
+      }
+    }
+  }
+}

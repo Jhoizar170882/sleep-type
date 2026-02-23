@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "Schlaf-Chronotyp-Quiz — Entdecken Sie Ihren Schlaftyp",
+    "description": "Sind Sie ein Löwe, Bär, Wolf oder Delfin? Machen Sie unser 10-Fragen-Chronotyp-Quiz, um Ihren natürlichen Schlafrhythmus zu entdecken und Ihre Produktivität zu optimieren.",
+    "ogTitle": "Was ist Ihr Schlaf-Chronotyp? — Kostenloses Quiz",
+    "ogDescription": "Finden Sie Ihren natürlichen Uhren-Typ mit 10 einfachen Fragen und erhalten Sie personalisierte Schlaf- und Produktivitätstipps."
+  },
+  "nav": {
+    "logo": "Schlaftyp-Quiz",
+    "language": "Sprache"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "auto": "Auto"
+  },
+  "footer": {
+    "tagline": "Ihren Rhythmus zu verstehen ist die Grundlage der persönlichen Optimierung.",
+    "copyright": "© 2026 Sleep Type Quiz. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย"
+  },
+  "landing": {
+    "badge": "Wissenschaftlich fundierte Schlafanalyse",
+    "title": "Was ist Ihr\nSchlaf-Chronotyp?",
+    "subtitle": "Entdecken Sie Ihren natürlichen biologischen Rhythmus mit nur 10 Fragen. Sind Sie ein Löwe, Bär, Wolf oder Delfin — und was bedeutet das für Ihre Gesundheit und Produktivität?",
+    "startButton": "Quiz starten",
+    "statsLabel1": "Getestete Personen",
+    "statsValue1": "240K+",
+    "statsLabel2": "Dauer",
+    "statsValue2": "3 Min.",
+    "statsLabel3": "Genauigkeitsrate",
+    "statsValue3": "92%",
+    "typesTitle": "4 Chronotypen",
+    "typesSubtitle": "Jeder Mensch hat eine einzigartige biologische Uhr. Das Wissen über Ihren Typ ermöglicht es Ihnen, Schlaf, Arbeit, Sport und Mahlzeiten für Spitzenleistungen zu optimieren.",
+    "scienceTitle": "Warum ist Ihr Chronotyp wichtig?",
+    "scienceText": "Ein Chronotyp ist mehr als nur ein 'Morgenmensch' oder 'Nachtmensch' zu sein. Es ist ein komplexes biologisches Merkmal, das durch Genetik, Hormone und Ihr Nervensystem geprägt wird. Im Einklang mit Ihrem Chronotyp zu leben kann die Schlafqualität, den Fokus und die täglichen Energielevels dramatisch verbessern.",
+    "howItWorksTitle": "So funktioniert es",
+    "howItWorksSteps": [
+      "Beantworten Sie 10 ehrliche Fragen zu Ihren täglichen Gewohnheiten",
+      "Unser Algorithmus analysiert Ihre Punktzahlen, um Ihren Chronotyp zu identifizieren",
+      "Erhalten Sie Ihre personalisierte Schlaf- und Produktivitäts-Roadmap"
+    ]
+  },
+  "quiz": {
+    "questionPrefix": "Frage",
+    "of": "von",
+    "progress": "{{current}} von {{total}}",
+    "next": "Weiter",
+    "back": "Zurück",
+    "submit": "Meine Ergebnisse anzeigen",
+    "selectOption": "Bitte wählen Sie eine Option",
+    "almostDone": "Fast geschafft!",
+    "goodProgress": "Guter Fortschritt!",
+    "halfwayThere": "Auf halbem Weg!"
+  },
+  "result": {
+    "loading": "Wird analysiert...",
+    "yourTypeIs": "Ihr Chronotyp ist",
+    "typeLabel": "Chronotyp",
+    "populationText": "Etwa {{percentage}}% der Bevölkerung teilen diesen Typ",
+    "timelineTitle": "Ihr optimaler Tagesplan",
+    "timelineSubtitle": "Ihre Aktivitäten auf diese Zeitfenster abzustimmen kann spürbar mehr Energie und Fokus freisetzen.",
+    "tipsTitle": "Produktivitätstipps für {{type}}s",
+    "tipsSubtitle": "Praktische Strategien, um im Einklang mit Ihrem natürlichen Rhythmus zu leben.",
+    "shareTitle": "Ergebnisse teilen",
+    "shareText": "Ich bin ein {{type}}-Chronotyp! Was ist Ihrer?",
+    "shareButton": "Teilen",
+    "copyLink": "Link kopieren",
+    "copySuccess": "Link kopiert!",
+    "retakeButton": "Quiz wiederholen",
+    "otherTypesTitle": "Andere Chronotypen erkunden",
+    "scoreBreakdownTitle": "Punkteaufschlüsselung",
+    "yourScore": "Ihre Punktzahl"
+  },
+  "chronotypes": {
+    "lion": {
+      "name": "Löwe",
+      "fullName": "Der Morgen-Löwe",
+      "shortDesc": "Der Frühaufsteher, der die Welt im Morgengrauen erobert",
+      "description": "Sie sind ein wahrer Morgenmensch, der bereits in Hochform ist, bevor die meisten Menschen aufwachen. Ihr Geist ist in den frühen Stunden am schärfsten, und Sie leisten Ihre beste Arbeit vor dem Mittag. Am Abend geht Ihre Energie auf natürliche Weise zurück, und frühes Zubettgehen fühlt sich wie eine Belohnung an, nicht wie ein Opfer.",
+      "traits": ["Frühaufsteher", "Maximale Konzentration am Morgen", "Früh am Abend müde", "Hochdiszipliniert", "Starke Willenskraft"]
+    },
+    "bear": {
+      "name": "Bär",
+      "fullName": "Der Solar-Bär",
+      "shortDesc": "Der ausgewogene Typ, der dem Rhythmus der Sonne folgt",
+      "description": "Sie gehören zum häufigsten Chronotyp, der über die Hälfte der Bevölkerung ausmacht. Ihr Rhythmus folgt der Sonne — Sie wachen natürlich mit dem Tageslicht auf und werden nach der Dunkelheit ruhiger. Sie erreichen zwischen 10 Uhr und 14 Uhr Ihre kognitive Spitzenleistung und sind gut für Standard-Sozial- und Arbeitspläne geeignet. Konsistenter Schlaf ist Ihre Superkraft.",
+      "traits": ["Ausgewogener Schlafzyklus", "Maximale Konzentration von spätem Vormittag bis Mittag", "Gut an soziale Zeitpläne angepasst", "Stabile Energie", "Starker Teamplayer"]
+    },
+    "wolf": {
+      "name": "Wolf",
+      "fullName": "Der Abend-Wolf",
+      "shortDesc": "Der Nachtdenker, dessen Kraft nach Einbruch der Dunkelheit erwacht",
+      "description": "Sie sind von Herzen ein Nachtmensch, der morgens lange braucht, um in Schwung zu kommen, aber in den Abendstunden auflebt. Nach 17 Uhr steigen Ihre Energie und Kreativität stark an, und Ihre besten Ideen kommen oft nach Mitternacht. Sie erleben häufig 'sozialen Jetlag' — die Erschöpfung, sich nach einem Zeitplan richten zu müssen, der nicht Ihrer Biologie entspricht.",
+      "traits": ["Spätaufsteher", "Maximale Konzentration am Abend", "Kreativer Denker", "Nachtenergie", "Tiefe Fokuskapazität"]
+    },
+    "dolphin": {
+      "name": "Delfin",
+      "fullName": "Der leichtschlafende Delfin",
+      "shortDesc": "Der hyperachtsame Typ mit einer unberechenbaren inneren Uhr",
+      "description": "Wie der Delfin, der mit der Hälfte seines Gehirns wach schläft, sind Sie ein leichter, oft unruhiger Schläfer mit einem unregelmäßigen Rhythmus. Ihre Konzentration kommt in unvorhersehbaren Schüben, und Sie sind sehr empfindlich gegenüber Stress, Lärm und Umgebungsveränderungen. Sie neigen jedoch dazu, hochintelligent und ein kreativer Problemlöser mit einem intensiv neugierigen Geist zu sein.",
+      "traits": ["Leichtschläfer", "Unregelmäßige Muster", "Hohe Intelligenz", "Empfindlich gegenüber Reizen", "Explosive Fokusschübe"]
+    }
+  },
+  "timeline": {
+    "lion": {
+      "wake": "Aufwachen — Frisch und bereit",
+      "exercise": "Sport — Den Körper aktivieren",
+      "breakfast": "Frühstück — Treibstoff für den Tag",
+      "deepWork": "Tiefarbeit beginnt",
+      "peakFocus": "Maximales Konzentrationsfenster",
+      "lunch": "Mittagspause",
+      "meetings": "Meetings und Zusammenarbeit",
+      "windDown": "Energie beginnt zu sinken",
+      "relax": "Leichte Lektüre oder Entspannung",
+      "sleep": "Schlafenszeit — Aufladen für morgen"
+    },
+    "bear": {
+      "wake": "Aufwachen — Entspannte Morgenroutine",
+      "breakfast": "Frühstück",
+      "commute": "Arbeitsweg oder Tagesbeginn",
+      "peakFocus": "Maximales Konzentrationsfenster",
+      "lunch": "Mittagessen — Ein mittägliches Reset",
+      "collaboration": "Zusammenarbeit und Meetings",
+      "exercise": "Sport nach der Arbeit",
+      "dinner": "Abendessen",
+      "windDown": "Abschalten und entspannen",
+      "sleep": "Schlafenszeit"
+    },
+    "wolf": {
+      "wake": "Aufwachen — Langsamer Start",
+      "slowStart": "Langsames Aufwärmen, Kaffeezeit",
+      "brunch": "Brunch",
+      "warming": "Allmähliches in Gang kommen",
+      "peakFocus": "Energie steigt — Tiefarbeit beginnt",
+      "dinner": "Abendessen",
+      "creativeWork": "Kreative Arbeit und tiefe Projekte",
+      "social": "Soziale Aktivitäten oder Hobbys",
+      "windDown": "Abschalten, dekomprimieren",
+      "sleep": "Schlafenszeit — Spätnächtliches Ende"
+    },
+    "dolphin": {
+      "wake": "Aufwachen — Unregelmäßiges Timing",
+      "lightSleep": "Leichter Schlaf, häufiges Aufwachen",
+      "morning": "Morgenroutine (unbeständig)",
+      "sporadicPeak": "Fokusschub (unvorhersehbar)",
+      "afternoon": "Nachmittag — Energieeinbruch",
+      "secondWind": "Zweiter Energieschub kommt",
+      "evening": "Abendliche Aktivitäten",
+      "racingMind": "Gedanken rasen",
+      "windDown": "Versuch zu entspannen",
+      "sleep": "Schlafenszeit — Wann immer sie kommt"
+    }
+  },
+  "tips": {
+    "lion": {
+      "1": "Schützen Sie Ihr 6-10-Uhr-Fenster konsequent. Blockieren Sie Ablenkungen und planen Sie Ihre wichtigste Aufgabe in diesem Tiefarbeitsblock ein, wenn Ihr kognitiver Höhepunkt am höchsten ist.",
+      "2": "Planen Sie Meetings und kollaborative Arbeit zwischen 13 und 15 Uhr. Ihre Energie verlagert sich in den frühen Nachmittagsstunden natürlich zur sozialen Interaktion.",
+      "3": "Dimmen Sie Bildschirme und verwenden Sie Blaulichtblocker-Brillen nach 20 Uhr. Den Melatonin-Haushalt zu schützen bestimmt direkt die Qualität Ihres kraftvollen nächsten Morgens.",
+      "4": "Halten Sie Ihre Aufwachzeit am Wochenende innerhalb einer Stunde Ihres Werktags-Zeitplans. Sozialer Jetlag erodiert den Morgenvorteil, der Ihr größter Wettbewerbsvorteil ist.",
+      "5": "Setzen Sie klare Grenzen bei Verpflichtungen am späten Abend. Ihre Produktivität baut auf Ihrem Schlaf auf, und kein spätes Meeting ist es wert, Ihre biologische Primetime zu opfern."
+    },
+    "bear": {
+      "1": "Bestimmen Sie 10 bis 14 Uhr als Ihr geschütztes Tiefarbeitsfenster und planen Sie Ihre wichtigsten Aufgaben in diesem Block.",
+      "2": "Ein 10-20-minütiger Mittagsschlaf nach dem Mittagessen kann Ihren Nachmittags-Fokus effektiv wiederherstellen und den Post-Lunch-Energieeinbruch verhindern.",
+      "3": "Halten Sie mindestens 5 Tage pro Woche die gleichen Schlaf- und Aufwachzeiten ein. Bären gedeihen bei konsistenten Zeitplänen mehr als jeder andere Chronotyp.",
+      "4": "Nachmittagssport (17-19 Uhr) verbessert Ihre Schlafqualität und steigert die Energie des nächsten Morgens — ein lohnenswerter positiver Kreislauf.",
+      "5": "Begrenzen Sie Koffein auf die Morgenstunden und vermeiden Sie es nach 14 Uhr. Die Halbwertszeit von Koffein bedeutet, dass es noch 8-10 Stunden nach dem Konsum Ihren Schlaf stören kann."
+    },
+    "wolf": {
+      "1": "Heben Sie kreative und analytische Aufgaben für nach 18 Uhr auf. Dann generiert Ihr Gehirn seine originellsten Ideen und klarsten Gedanken.",
+      "2": "Kämpfen Sie nicht gegen die langsamen Morgenstunden — arbeiten Sie damit. Nutzen Sie den Vormittag für E-Mails, Verwaltung und risikoarme Aufgaben als 'Aufwärmblock', bevor Ihr Motor vollständig anspringt.",
+      "3": "Maximieren Sie die Lichtexposition direkt nach dem Aufwachen. Helles natürliches Licht oder eine Lichttherapielampe ist das effektivste Werkzeug, um Ihre biologische Uhr früher zu stellen.",
+      "4": "Beenden Sie die Tiefarbeit um Mitternacht und beginnen Sie eine echte Wind-Down-Routine. Eine 30-60-minütige Übergangszeit verbessert die Schlafqualität weit mehr als ein abruptes Stoppen der Arbeit.",
+      "5": "Verhandeln Sie nach Möglichkeit Nachmittagsslots für wichtige Meetings. Sich früh morgens zur Leistung zu zwingen bedeutet einfach, Treibstoff zu verbrennen, den Sie noch nicht haben."
+    },
+    "dolphin": {
+      "1": "Wenn ein Fokusschub kommt, lassen Sie alles fallen und gehen Sie sofort Ihre wichtigste Aufgabe an. Sie haben keine geplanten Spitzenfenster, aber wenn das Fenster sich öffnet, ist es kraftvoll.",
+      "2": "Nutzen Sie Ihr Bett nur zum Schlafen. Im Bett zu arbeiten, Fernzusehen oder das Telefon zu scrollen schafft eine mentale Assoziation, die Schlaflosigkeit für Ihr empfindliches Nervensystem verschlimmert.",
+      "3": "Gestalten Sie eine reizarme Schlafumgebung. Weißes Rauschen, Verdunkelungsvorhänge und eine kühle Raumtemperatur (18-20°C) sind sehr effektiv für Leichtschläfer.",
+      "4": "Seien Sie besonders vorsichtig mit Koffein und Alkohol. Delfine sind empfindlicher gegenüber beiden Substanzen, und selbst kleine Mengen können Ihre Schlafarchitektur erheblich stören.",
+      "5": "Hören Sie auf, die perfekte Routine aufzubauen. Verankern Sie stattdessen nur Ihre Aufwachzeit und lassen Sie den Rest flexibel. Ein fixer Punkt ist nachhaltiger und weniger stressig als ein starrer Zeitplan."
+    }
+  },
+  "questions": {
+    "1": {
+      "text": "Wenn Sie natürlich aufwachen — ohne Wecker — zu welcher Zeit öffnen Sie in der Regel die Augen?",
+      "options": {
+        "a": "5-6 Uhr — Bereits aktiv bevor die Sonne vollständig aufgeht",
+        "b": "7-8 Uhr — Genau die richtige Zeit",
+        "c": "9-10 Uhr — Ein etwas späterer Start fühlt sich natürlich an",
+        "d": "Variiert jeden Tag — Kein konsistentes Muster"
+      }
+    },
+    "2": {
+      "text": "Zu welcher Tageszeit fühlen Sie sich am energiegeladensten und geistig schärfsten?",
+      "options": {
+        "a": "Morgen — Höhepunkt beim Frühstück, nachmittags abnehmend",
+        "b": "Später Vormittag bis früher Nachmittag — Um die Mittagszeit ist mein Bestes",
+        "c": "Abend — Mein Motor startet, wenn die Sonne untergeht",
+        "d": "Unvorhersehbar — Plötzlich scharf, dann plötzlich weg"
+      }
+    },
+    "3": {
+      "text": "Bei welcher Mahlzeit des Tages haben Sie am meisten Hunger und essen am meisten?",
+      "options": {
+        "a": "Frühstück — Es ist meine wichtigste und befriedigendste Mahlzeit",
+        "b": "Mittagessen — Die größte Mahlzeit meines Tages",
+        "c": "Abendessen — Ich esse meine größte Mahlzeit am Abend",
+        "d": "Kein Muster — Ich esse, wenn ich hungrig bin, Mengen variieren"
+      }
+    },
+    "4": {
+      "text": "Wann reagiert Ihr Körper am besten und leistet Höchstleistungen beim Sport?",
+      "options": {
+        "a": "Früh morgens (vor 6 Uhr) — Morgensport fühlt sich toll an",
+        "b": "Später Vormittag bis Mittag — Wenn mein Körper richtig wach ist",
+        "c": "Abend — Am Ende des Tages zu trainieren ist meine Präferenz",
+        "d": "Keine Präferenz — Wann immer ich Lust habe"
+      }
+    },
+    "5": {
+      "text": "Wann kommen Ihnen neue Ideen am natürlichsten und fließt kreative Arbeit am besten?",
+      "options": {
+        "a": "Im Morgengrauen oder früh morgens — Stille Stunden wecken mein bestes Denken",
+        "b": "Tagsüber — Externe Anreize und Aktivität fördern meine Ideen",
+        "c": "Spät in der Nacht — Wenn die Welt ruhig wird, entzündet sich mein Geist",
+        "d": "Sporadische Schübe — Ideen strömen zufällig ein, dann verschwinden sie"
+      }
+    },
+    "6": {
+      "text": "Wann fühlen Sie sich sozial am energiegeladensten und genießen es am meisten, mit Menschen zu verbinden?",
+      "options": {
+        "a": "Morgendliche Kaffeemeetings — Energie des frischen Starts ist am besten",
+        "b": "Mittagstrefffen — Entspannte Unterhaltung beim Essen ist ideal",
+        "c": "Abendessen oder Partys — Ich bin nach Einbruch der Dunkelheit am geselligsten",
+        "d": "Es kommt auf das Wer an, nicht das Wann — Eins zu eins funktioniert jederzeit"
+      }
+    },
+    "7": {
+      "text": "Wie lange dauert es normalerweise, bis Sie im Bett einschlafen?",
+      "options": {
+        "a": "Fast sofort — Eingeschlafen innerhalb von 5 Minuten",
+        "b": "Innerhalb von 20 Minuten — Schlafe bequem ein",
+        "c": "Lange Zeit — Mein Geist hört nicht auf, oft 30+ Minuten",
+        "d": "Stark variierend — Manchmal sofort, manchmal nicht bis zum Morgengrauen"
+      }
+    },
+    "8": {
+      "text": "An Wochenenden ohne Verpflichtungen, was machen Sie morgens typischerweise?",
+      "options": {
+        "a": "Wache ungefähr zur gleichen Zeit wie an Werktagen auf — automatisch",
+        "b": "Schlafe 1-2 Stunden mehr als an Werktagen",
+        "c": "Schlafe 3+ Stunden mehr oder wache um die Mittagszeit auf",
+        "d": "Völlig unvorhersehbar — keine zwei Wochenenden sind gleich"
+      }
+    },
+    "9": {
+      "text": "Wie ist Ihre Beziehung zu Nickerchen?",
+      "options": {
+        "a": "Ich brauche sie nicht — Tagsüber nicht schläfrig und kann sowieso kein Nickerchen machen",
+        "b": "Gelegentlich hilfreich — Ein kurzes Nachmittagsnickerchen ist erfrischend",
+        "c": "Ich liebe sie — Ein Nachmittagsnickerchen ist das Highlight meines Tages",
+        "d": "Ich will sie, kann aber nicht — Zu müde zum Funktionieren, aber Nickerchen ruiniert meinen Nachtschlaf"
+      }
+    },
+    "10": {
+      "text": "Wie läuft ein typischer Abend bei Ihnen ab?",
+      "options": {
+        "a": "Fernsehen oder leichte Lektüre, schlafe natürlich vor 22 Uhr ein",
+        "b": "Lesen oder YouTube bis etwa 23 Uhr, dann bequemer Schlaf",
+        "c": "Aktiv arbeitend oder beschäftigt weit nach Mitternacht, spät im Bett",
+        "d": "Ich liege hin, aber mein Geist rast — Schlaf kommt nicht leicht, unabhängig vom Zeitpunkt"
+      }
+    }
+  }
+}
