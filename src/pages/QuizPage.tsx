@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { submitQuizResult } from '@/lib/api';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEOHead from '@/components/SEOHead';
 import AnalyzingOverlay from '@/components/AnalyzingOverlay';
@@ -23,7 +24,7 @@ const itemVariants = {
 
 export default function QuizPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [direction, setDirection] = useState(1);
@@ -50,6 +51,7 @@ export default function QuizPage() {
     if (!selected) return;
     if (isLast) {
       const result = calculateChronotype(answers);
+      submitQuizResult({ answers, locale: i18n.language });
       setAnalyzing(true);
       setTimeout(() => navigate(`/result?type=${result.id}`, { state: { result } }), 2000);
       return;
@@ -90,14 +92,14 @@ export default function QuizPage() {
         {/* Progress */}
         <div className="mb-8">
           <div className="flex justify-between items-center mb-3">
-            <span className="text-slate-400 text-xs font-bold tracking-widest uppercase">
+            <span className="text-slate-500 dark:text-slate-400 text-xs font-bold tracking-widest uppercase">
               {progressMessage()}
             </span>
-            <span className="text-slate-500 text-xs font-bold">
+            <span className="text-slate-400 dark:text-slate-500 text-xs font-bold">
               {current + 1} / {total}
             </span>
           </div>
-          <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+          <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
               animate={{ width: `${progress + (1 / total) * 100}%` }}
@@ -115,9 +117,9 @@ export default function QuizPage() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction * -60 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl"
+            className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl"
           >
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-8 leading-snug">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-snug">
               {t(`questions.${question.id}.text`)}
             </h2>
 
@@ -136,8 +138,8 @@ export default function QuizPage() {
                     onClick={() => handleSelect(optId)}
                     className={`w-full p-4 md:p-5 text-left rounded-xl border transition-all duration-200 cursor-pointer ${
                       isSelected
-                        ? 'border-purple-500/60 bg-purple-500/10 text-white'
-                        : 'border-white/5 bg-white/5 text-slate-300 hover:bg-white/10 hover:border-white/20 hover:text-white'
+                        ? 'border-purple-500/60 bg-purple-500/10 text-slate-900 dark:text-white'
+                        : 'border-black/5 dark:border-white/5 bg-black/5 dark:bg-white/5 text-slate-600 dark:text-slate-300 hover:bg-black/10 dark:hover:bg-white/10 hover:border-black/20 dark:hover:border-white/20 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
                     <div className="flex items-start gap-3">
@@ -145,7 +147,7 @@ export default function QuizPage() {
                         className={`flex-shrink-0 w-6 h-6 rounded-full border text-xs font-black flex items-center justify-center mt-0.5 transition-colors ${
                           isSelected
                             ? 'border-purple-400 bg-purple-500 text-white'
-                            : 'border-white/20 text-slate-500'
+                            : 'border-black/20 dark:border-white/20 text-slate-400 dark:text-slate-500'
                         }`}
                       >
                         {optId.toUpperCase()}
@@ -165,7 +167,7 @@ export default function QuizPage() {
         <div className="flex justify-between items-center mt-6">
           <button
             onClick={handleBack}
-            className="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-slate-400 text-sm font-bold hover:bg-white/10 hover:text-white transition-all cursor-pointer"
+            className="px-5 py-2.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-sm font-bold hover:bg-black/10 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer"
           >
             {t('quiz.back')}
           </button>
@@ -175,8 +177,8 @@ export default function QuizPage() {
             disabled={!selected}
             className={`px-7 py-2.5 rounded-full text-sm font-bold transition-all cursor-pointer ${
               selected
-                ? 'bg-white text-slate-900 hover:bg-slate-100'
-                : 'bg-white/10 text-slate-600 cursor-not-allowed'
+                ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-100'
+                : 'bg-black/10 dark:bg-white/10 text-slate-400 dark:text-slate-600 cursor-not-allowed'
             }`}
           >
             {isLast ? t('quiz.submit') : t('quiz.next')}

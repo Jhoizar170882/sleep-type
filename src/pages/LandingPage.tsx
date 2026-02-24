@@ -1,7 +1,9 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SEOHead from '@/components/SEOHead';
+import { fetchStats } from '@/lib/api';
 
 const chronotypeCards = [
   {
@@ -38,6 +40,19 @@ const fadeUp = {
 export default function LandingPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const [liveStats, setLiveStats] = useState<{ totalTests: number } | null>(null);
+
+  useEffect(() => {
+    fetchStats().then(data => {
+      if (data) setLiveStats(data);
+    });
+  }, []);
+
+  const displayTotal = liveStats
+    ? liveStats.totalTests >= 1000
+      ? `${(liveStats.totalTests / 1000).toFixed(0)}K+`
+      : `${liveStats.totalTests}`
+    : t('landing.statsValue1');
 
   return (
     <>
@@ -47,7 +62,7 @@ export default function LandingPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
-      className="min-h-screen text-slate-50"
+      className="min-h-screen text-slate-900 dark:text-slate-50"
     >
       {/* Hero */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-16 text-center">
@@ -57,7 +72,7 @@ export default function LandingPage() {
           animate="animate"
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-xs font-bold tracking-widest uppercase mb-8">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-slate-500 dark:text-slate-400 text-xs font-bold tracking-widest uppercase mb-8">
             {t('landing.badge')}
           </span>
         </motion.div>
@@ -83,7 +98,7 @@ export default function LandingPage() {
           initial="initial"
           animate="animate"
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-lg md:text-xl text-slate-300 max-w-md mb-12 font-medium leading-relaxed"
+          className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-md mb-12 font-medium leading-relaxed"
         >
           {t('landing.subtitle')}
         </motion.p>
@@ -106,7 +121,7 @@ export default function LandingPage() {
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="px-8 py-4 rounded-full bg-white text-slate-900 font-bold text-lg cursor-pointer"
+            className="px-8 py-4 rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold text-lg cursor-pointer"
           >
             {t('landing.startButton')}
           </motion.button>
@@ -121,13 +136,13 @@ export default function LandingPage() {
           className="flex items-center gap-8 mt-16"
         >
           {[
-            { label: t('landing.statsLabel1'), value: t('landing.statsValue1') },
+            { label: t('landing.statsLabel1'), value: displayTotal },
             { label: t('landing.statsLabel2'), value: t('landing.statsValue2') },
             { label: t('landing.statsLabel3'), value: t('landing.statsValue3') },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-2xl font-black text-slate-200">{stat.value}</p>
-              <p className="text-slate-500 text-xs mt-0.5">{stat.label}</p>
+              <p className="text-2xl font-black text-slate-800 dark:text-slate-200">{stat.value}</p>
+              <p className="text-slate-400 dark:text-slate-500 text-xs mt-0.5">{stat.label}</p>
             </div>
           ))}
         </motion.div>
@@ -142,10 +157,10 @@ export default function LandingPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-100 mb-3">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-3">
             {t('landing.typesTitle')}
           </h2>
-          <p className="text-slate-400 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
             {t('landing.typesSubtitle')}
           </p>
         </motion.div>
@@ -158,7 +173,7 @@ export default function LandingPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center hover:bg-white/8 transition-all duration-300"
+              className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 text-center hover:bg-black/8 dark:hover:bg-white/8 transition-all duration-300"
             >
               <div className="text-5xl mb-3">{card.emoji}</div>
               <p
@@ -166,8 +181,8 @@ export default function LandingPage() {
               >
                 {t(`chronotypes.${card.id}.name`)}
               </p>
-              <p className="text-xs text-slate-500">{card.pct}</p>
-              <p className="text-xs text-slate-400 mt-2 font-medium leading-snug">
+              <p className="text-xs text-slate-400 dark:text-slate-500">{card.pct}</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 font-medium leading-snug">
                 {t(`chronotypes.${card.id}.shortDesc`)}
               </p>
             </motion.div>
@@ -184,7 +199,7 @@ export default function LandingPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-100 mb-2">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-2">
             {t('landing.howItWorksTitle')}
           </h2>
         </motion.div>
@@ -198,12 +213,12 @@ export default function LandingPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="flex items-start gap-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5"
+                className="flex items-start gap-4 bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-2xl p-5"
               >
                 <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200 flex-shrink-0 leading-none mt-0.5">
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <p className="text-slate-300 text-sm font-medium leading-relaxed">{step}</p>
+                <p className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-relaxed">{step}</p>
               </motion.div>
             )
           )}
@@ -211,11 +226,11 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="px-4 py-8 text-center border-t border-white/5">
-        <p className="text-slate-500 text-xs font-medium">
+      <footer className="px-4 py-8 text-center border-t border-black/5 dark:border-white/5">
+        <p className="text-slate-400 dark:text-slate-500 text-xs font-medium">
           {t('footer.tagline')}
         </p>
-        <p className="text-slate-600 text-xs mt-2">
+        <p className="text-slate-300 dark:text-slate-600 text-xs mt-2">
           {t('footer.copyright')}
         </p>
       </footer>

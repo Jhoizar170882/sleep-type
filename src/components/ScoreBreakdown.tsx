@@ -32,12 +32,12 @@ export default function ScoreBreakdown({ percentages }: Props) {
             <span className="text-xl w-8 text-center">{config.emoji}</span>
             <div className="flex-1">
               <div className="flex justify-between items-center mb-1">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                   {t(`chronotypes.${id}.name`)}
                 </span>
-                <span className="text-xs font-black text-slate-300">{pct}%</span>
+                <span className="text-xs font-black text-slate-700 dark:text-slate-300">{pct}%</span>
               </div>
-              <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+              <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
                 <motion.div
                   className={`h-full rounded-full bg-gradient-to-r ${config.gradient}`}
                   initial={{ width: 0 }}

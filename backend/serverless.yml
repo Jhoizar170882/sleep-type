@@ -13,13 +13,16 @@ provider:
     throttling:
       burstLimit: 100
       rateLimit: 50
+    binaryMediaTypes:
+      - 'multipart/form-data'
+      - 'application/octet-stream'
   environment:
     DB_HOST: ${env:DB_HOST}
     DB_NAME: ${env:DB_NAME, 'sleepquiz'}
     DB_USER: ${env:DB_USER}
     DB_PASSWORD: ${env:DB_PASSWORD}
     DB_PORT: ${env:DB_PORT, '5432'}
-    ALLOWED_ORIGIN: ${env:ALLOWED_ORIGIN, '*'}
+    ALLOWED_ORIGIN: ${env:ALLOWED_ORIGIN, 'https://sleeptypequiz.com'}
   vpc:
     securityGroupIds:
       - ${env:VPC_SECURITY_GROUP_ID}
@@ -35,6 +38,12 @@ provider:
             - logs:CreateLogStream
             - logs:PutLogEvents
           Resource: 'arn:aws:logs:*:*:*'
+        - Effect: Allow
+          Action:
+            - ec2:CreateNetworkInterface
+            - ec2:DescribeNetworkInterfaces
+            - ec2:DeleteNetworkInterface
+          Resource: '*'
 
 functions:
   sleepTypeSubmit:
@@ -44,7 +53,15 @@ functions:
       - http:
           path: /api/submit
           method: post
-          cors: true
+          cors:
+            origin: ${env:ALLOWED_ORIGIN, 'https://sleeptypequiz.com'}
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
 
   sleepTypeStats:
     handler: handler.sleep_type_stats
@@ -53,7 +70,15 @@ functions:
       - http:
           path: /api/stats
           method: get
-          cors: true
+          cors:
+            origin: ${env:ALLOWED_ORIGIN, 'https://sleeptypequiz.com'}
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
 
 plugins:
   - serverless-python-requirements
@@ -61,3 +86,5 @@ plugins:
 custom:
   pythonRequirements:
     dockerizePip: false
+    slim: true
+    strip: false

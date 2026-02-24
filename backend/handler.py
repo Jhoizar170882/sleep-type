@@ -62,8 +62,8 @@ def sleep_type_submit(event: dict, _context) -> dict:
     if not isinstance(answers, list) or len(answers) != 10:
         return _error("'answers' must be a list of exactly 10 items")
 
-    if locale not in {"ko", "en"}:
-        return _error("'locale' must be one of: 'ko', 'en'")
+    if locale not in {"ko", "en", "ja", "zh", "es", "fr", "de", "pt", "vi", "th"}:
+        return _error("'locale' must be one of: 'ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt', 'vi', 'th'")
 
     for item in answers:
         if not isinstance(item, dict):

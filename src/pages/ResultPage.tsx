@@ -76,7 +76,7 @@ export default function ResultPage() {
       <div className="w-full max-w-2xl">
         {/* Hero reveal */}
         <div className="text-center mb-10">
-          <p className="text-slate-400 text-sm font-bold tracking-widest uppercase mb-4">
+          <p className="text-slate-500 dark:text-slate-400 text-sm font-bold tracking-widest uppercase mb-4">
             {t('result.yourTypeIs')}
           </p>
 
@@ -103,7 +103,7 @@ export default function ResultPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.45 }}
-            className="text-slate-300 text-center mb-5 font-medium leading-relaxed max-w-md mx-auto"
+            className="text-slate-600 dark:text-slate-300 text-center mb-5 font-medium leading-relaxed max-w-md mx-auto"
           >
             {t(`chronotypes.${result.id}.description`)}
           </motion.p>
@@ -112,9 +112,9 @@ export default function ResultPage() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: 0.55 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10"
           >
-            <span className="text-slate-400 text-xs font-medium">
+            <span className="text-slate-500 dark:text-slate-400 text-xs font-medium">
               {t('result.populationText', { percentage: data.percentage })}
             </span>
           </motion.div>
@@ -130,7 +130,7 @@ export default function ResultPage() {
               (trait) => (
                 <span
                   key={trait}
-                  className={`text-xs font-bold px-3 py-1 rounded-full text-transparent bg-clip-text bg-gradient-to-r ${gradient} border border-white/10 bg-white/5`}
+                  className={`text-xs font-bold px-3 py-1 rounded-full text-transparent bg-clip-text bg-gradient-to-r ${gradient} border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5`}
                   style={{ WebkitTextFillColor: 'transparent' }}
                 >
                   {trait}
@@ -145,9 +145,9 @@ export default function ResultPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 mb-5"
+          className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 mb-5"
         >
-          <h2 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-5">
+          <h2 className="text-sm font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-5">
             {t('result.scoreBreakdownTitle')}
           </h2>
           <ScoreBreakdown percentages={result.percentages} />
@@ -158,12 +158,12 @@ export default function ResultPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 mb-5"
+          className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 mb-5"
         >
-          <h2 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-1">
+          <h2 className="text-sm font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">
             {t('result.timelineTitle')}
           </h2>
-          <p className="text-slate-500 text-xs mb-5 font-medium">
+          <p className="text-slate-400 dark:text-slate-500 text-xs mb-5 font-medium">
             {t('result.timelineSubtitle')}
           </p>
           <Timeline entries={data.timeline} primaryColor={data.color.primary} />
@@ -174,19 +174,19 @@ export default function ResultPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 mb-5"
+          className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 mb-5"
         >
-          <h2 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-1">
+          <h2 className="text-sm font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">
             {t('result.tipsTitle', { type: typeName })}
           </h2>
-          <p className="text-slate-500 text-xs mb-5 font-medium">
+          <p className="text-slate-400 dark:text-slate-500 text-xs mb-5 font-medium">
             {t('result.tipsSubtitle')}
           </p>
           <div className="flex flex-col gap-3">
             {data.tips.map((tipKey, i) => (
               <div
                 key={tipKey}
-                className="flex gap-3 bg-white/5 border border-white/10 rounded-2xl p-4"
+                className="flex gap-3 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-4"
               >
                 <span
                   className={`text-xs font-black text-transparent bg-clip-text bg-gradient-to-r ${gradient} flex-shrink-0 mt-0.5`}
@@ -194,7 +194,7 @@ export default function ResultPage() {
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <p className="text-slate-300 text-sm font-medium leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-relaxed">
                   {t(tipKey)}
                 </p>
               </div>
@@ -207,9 +207,9 @@ export default function ResultPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.0 }}
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 mb-6"
+          className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 mb-6"
         >
-          <h2 className="text-sm font-black text-slate-400 uppercase tracking-widest mb-5">
+          <h2 className="text-sm font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-5">
             {t('result.shareTitle')}
           </h2>
           <ShareButtons shareText={shareText} />
@@ -224,7 +224,7 @@ export default function ResultPage() {
         >
           <button
             onClick={() => navigate('/quiz')}
-            className="px-8 py-3 rounded-full border border-white/10 bg-white/5 text-slate-400 text-sm font-bold hover:bg-white/10 hover:text-white transition-all cursor-pointer"
+            className="px-8 py-3 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-sm font-bold hover:bg-black/10 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer"
           >
             {t('result.retakeButton')}
           </button>

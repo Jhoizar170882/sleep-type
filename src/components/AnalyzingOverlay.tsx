@@ -9,7 +9,7 @@ export default function AnalyzingOverlay() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center"
+      className="fixed inset-0 z-50 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center"
     >
       <motion.div
         animate={{ rotate: 360 }}
@@ -22,7 +22,7 @@ export default function AnalyzingOverlay() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-slate-300 text-lg font-bold"
+        className="text-slate-600 dark:text-slate-300 text-lg font-bold"
       >
         {t('result.loading')}
       </motion.p>

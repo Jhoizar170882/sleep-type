@@ -49,7 +49,7 @@ export default function ShareButtons({ shareText, url }: Props) {
       onClick: handleCopy,
       color: copied
         ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-400'
-        : 'hover:bg-white/10 hover:border-white/20',
+        : 'hover:bg-black/10 dark:hover:bg-white/10 hover:border-black/20 dark:hover:border-white/20',
     },
   ];
 
@@ -61,7 +61,7 @@ export default function ShareButtons({ shareText, url }: Props) {
           onClick={btn.onClick}
           title={btn.label}
           aria-label={btn.label}
-          className={`aspect-square rounded-xl bg-white/5 border border-white/10 flex flex-col items-center justify-center gap-1 text-slate-400 transition-all duration-200 ${btn.color} min-h-[56px]`}
+          className={`aspect-square rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 transition-all duration-200 ${btn.color} min-h-[56px]`}
         >
           {btn.icon}
           <span className="text-[10px] font-bold leading-none hidden sm:block truncate w-full text-center px-1">

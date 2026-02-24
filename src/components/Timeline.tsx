@@ -32,9 +32,9 @@ export default function Timeline({ entries, primaryColor }: Props) {
                   <div className="w-0.5 flex-1 mt-1" style={{ backgroundColor: entry.color + '40', minHeight: '24px' }} />
                 )}
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-3 flex-1 min-w-0">
-                <p className="text-xs font-black text-slate-400 tracking-widest mb-0.5">{entry.time}</p>
-                <p className="text-sm font-medium text-slate-200 leading-snug">{t(entry.activity)}</p>
+              <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl p-3 flex-1 min-w-0">
+                <p className="text-xs font-black text-slate-500 dark:text-slate-400 tracking-widest mb-0.5">{entry.time}</p>
+                <p className="text-sm font-medium text-slate-800 dark:text-slate-200 leading-snug">{t(entry.activity)}</p>
               </div>
             </motion.div>
           ))}
@@ -52,7 +52,7 @@ export default function Timeline({ entries, primaryColor }: Props) {
                 className="flex flex-col items-center gap-2 w-32"
               >
                 <div
-                  className="w-full rounded-xl p-3 border border-white/10 text-center"
+                  className="w-full rounded-xl p-3 border text-center"
                   style={{ backgroundColor: entry.color + '20', borderColor: entry.color + '40' }}
                 >
                   <p
@@ -61,7 +61,7 @@ export default function Timeline({ entries, primaryColor }: Props) {
                   >
                     {entry.time}
                   </p>
-                  <p className="text-xs font-medium text-slate-300 leading-snug">
+                  <p className="text-xs font-medium text-slate-700 dark:text-slate-300 leading-snug">
                     {t(entry.activity)}
                   </p>
                 </div>

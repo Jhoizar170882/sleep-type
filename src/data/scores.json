@@ -1,0 +1,62 @@
+{
+  "1": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "2": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 0, "dolphin": 1},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "3": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "4": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "5": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 0, "dolphin": 1},
+    "c": {"lion": 0, "bear": 0, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "6": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 0},
+    "d": {"lion": 1, "bear": 1, "wolf": 1, "dolphin": 3}
+  },
+  "7": {
+    "a": {"lion": 3, "bear": 2, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 0, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 0, "dolphin": 3}
+  },
+  "8": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 0, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  },
+  "9": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 1, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 0, "dolphin": 3}
+  },
+  "10": {
+    "a": {"lion": 3, "bear": 1, "wolf": 0, "dolphin": 0},
+    "b": {"lion": 1, "bear": 3, "wolf": 1, "dolphin": 0},
+    "c": {"lion": 0, "bear": 0, "wolf": 3, "dolphin": 1},
+    "d": {"lion": 0, "bear": 0, "wolf": 1, "dolphin": 3}
+  }
+}
