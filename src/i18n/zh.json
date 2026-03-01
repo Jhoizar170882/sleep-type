@@ -52,7 +52,8 @@
       "如实回答10道关于日常习惯的问题",
       "算法分析你的得分，识别你的时间类型",
       "获取个性化的睡眠与效率路线图"
-    ]
+    ],
+    "viewStats": "查看统计"
   },
   "quiz": {
     "questionPrefix": "问题",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "探索其他时间类型",
     "scoreBreakdownTitle": "得分分布",
     "yourScore": "我的得分"
+  },
+  "stats": {
+    "title": "实时统计",
+    "subtitle": "查看全球用户的睡眠时间类型分布。",
+    "totalParticipants": "总参与人数",
+    "distributionTitle": "时间类型分布",
+    "takeQuizButton": "开始测试",
+    "backToHome": "返回首页"
   },
   "chronotypes": {
     "lion": {

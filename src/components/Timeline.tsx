@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { TimelineEntry } from '@/types';
@@ -7,7 +8,7 @@ interface Props {
   primaryColor: string;
 }
 
-export default function Timeline({ entries, primaryColor }: Props) {
+export default memo(function Timeline({ entries, primaryColor }: Props) {
   const { t } = useTranslation();
 
   return (
@@ -32,7 +33,7 @@ export default function Timeline({ entries, primaryColor }: Props) {
                   <div className="w-0.5 flex-1 mt-1" style={{ backgroundColor: entry.color + '40', minHeight: '24px' }} />
                 )}
               </div>
-              <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl p-3 flex-1 min-w-0">
+              <div className="bg-white/70 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 rounded-xl p-3 flex-1 min-w-0">
                 <p className="text-xs font-black text-slate-500 dark:text-slate-400 tracking-widest mb-0.5">{entry.time}</p>
                 <p className="text-sm font-medium text-slate-800 dark:text-slate-200 leading-snug">{t(entry.activity)}</p>
               </div>
@@ -40,16 +41,16 @@ export default function Timeline({ entries, primaryColor }: Props) {
           ))}
         </div>
 
-        {/* Desktop: horizontal scroll */}
-        <div className="hidden md:block overflow-x-auto pb-4">
-          <div className="flex gap-3 min-w-max">
+        {/* Desktop: wrapping grid */}
+        <div className="hidden md:block">
+          <div className="grid grid-cols-5 gap-3">
             {entries.map((entry, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="flex flex-col items-center gap-2 w-32"
+                className="flex flex-col items-center gap-2"
               >
                 <div
                   className="w-full rounded-xl p-3 border text-center"
@@ -70,11 +71,11 @@ export default function Timeline({ entries, primaryColor }: Props) {
           </div>
           {/* Connecting line */}
           <div
-            className="h-0.5 mt-2 rounded-full opacity-20"
+            className="h-0.5 mt-3 rounded-full opacity-20"
             style={{ background: `linear-gradient(to right, transparent, ${primaryColor}, transparent)` }}
           />
         </div>
       </div>
     </div>
   );
-}
+});

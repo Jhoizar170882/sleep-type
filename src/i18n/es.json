@@ -52,7 +52,8 @@
       "Responde 10 preguntas honestas sobre tus hábitos diarios",
       "Nuestro algoritmo analiza tus puntuaciones para identificar tu cronotipo",
       "Obtén tu hoja de ruta personalizada de sueño y productividad"
-    ]
+    ],
+    "viewStats": "Ver Estadísticas"
   },
   "quiz": {
     "questionPrefix": "Pregunta",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Explorar Otros Cronotipos",
     "scoreBreakdownTitle": "Desglose de Puntuación",
     "yourScore": "Tu Puntuación"
+  },
+  "stats": {
+    "title": "Estadísticas en Vivo",
+    "subtitle": "Descubre cómo se distribuyen los cronotipos del sueño entre todos los participantes.",
+    "totalParticipants": "Participantes Totales",
+    "distributionTitle": "Distribución de Cronotipos",
+    "takeQuizButton": "Hacer el Test",
+    "backToHome": "Volver al Inicio"
   },
   "chronotypes": {
     "lion": {

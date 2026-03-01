@@ -12,11 +12,7 @@ interface ThemeContextValue {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function getLocalHour(): number {
-  const now = new Date();
-  const offsetMs = now.getTimezoneOffset() * 60 * 1000;
-  const localMs = now.getTime() - offsetMs;
-  const localDate = new Date(localMs);
-  return localDate.getUTCHours();
+  return new Date().getHours();
 }
 
 function resolveAutoTheme(): ResolvedTheme {

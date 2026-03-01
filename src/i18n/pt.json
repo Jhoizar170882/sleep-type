@@ -52,7 +52,8 @@
       "Responda honestamente 10 perguntas sobre seus hábitos diários",
       "Nosso algoritmo analisa suas pontuações para identificar seu cronotipo",
       "Obtenha seu roteiro personalizado de sono e produtividade"
-    ]
+    ],
+    "viewStats": "Ver Estatísticas"
   },
   "quiz": {
     "questionPrefix": "Pergunta",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Explorar Outros Cronotipos",
     "scoreBreakdownTitle": "Detalhamento da Pontuação",
     "yourScore": "Sua Pontuação"
+  },
+  "stats": {
+    "title": "Estatísticas em Tempo Real",
+    "subtitle": "Veja como os cronotipos do sono estão distribuídos entre todos os participantes.",
+    "totalParticipants": "Participantes Totais",
+    "distributionTitle": "Distribuição de Cronotipos",
+    "takeQuizButton": "Fazer o Quiz",
+    "backToHome": "Voltar ao Início"
   },
   "chronotypes": {
     "lion": {

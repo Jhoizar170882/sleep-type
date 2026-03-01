@@ -52,7 +52,8 @@
       "Beantworten Sie 10 ehrliche Fragen zu Ihren täglichen Gewohnheiten",
       "Unser Algorithmus analysiert Ihre Punktzahlen, um Ihren Chronotyp zu identifizieren",
       "Erhalten Sie Ihre personalisierte Schlaf- und Produktivitäts-Roadmap"
-    ]
+    ],
+    "viewStats": "Statistiken anzeigen"
   },
   "quiz": {
     "questionPrefix": "Frage",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Andere Chronotypen erkunden",
     "scoreBreakdownTitle": "Punkteaufschlüsselung",
     "yourScore": "Ihre Punktzahl"
+  },
+  "stats": {
+    "title": "Live-Statistiken",
+    "subtitle": "Sehen Sie, wie die Schlaf-Chronotypen unter allen Teilnehmern verteilt sind.",
+    "totalParticipants": "Gesamtteilnehmer",
+    "distributionTitle": "Chronotyp-Verteilung",
+    "takeQuizButton": "Quiz starten",
+    "backToHome": "Zurück zur Startseite"
   },
   "chronotypes": {
     "lion": {

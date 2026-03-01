@@ -99,10 +99,10 @@ export default function QuizPage() {
               {current + 1} / {total}
             </span>
           </div>
-          <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div className="w-full h-2 bg-slate-200/80 dark:bg-slate-800 rounded-full overflow-hidden ring-1 ring-slate-200/60 dark:ring-transparent" role="progressbar" aria-valuenow={current + 1} aria-valuemin={1} aria-valuemax={total} aria-label={`${current + 1} / ${total}`}>
             <motion.div
               className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
-              animate={{ width: `${progress + (1 / total) * 100}%` }}
+              animate={{ width: `${progress}%` }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
             />
           </div>
@@ -117,7 +117,7 @@ export default function QuizPage() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction * -60 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl"
+            className="bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 md:p-10 shadow-lg dark:shadow-2xl"
           >
             <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-snug">
               {t(`questions.${question.id}.text`)}
@@ -128,6 +128,8 @@ export default function QuizPage() {
               initial="hidden"
               animate="show"
               className="flex flex-col gap-3"
+              role="radiogroup"
+              aria-label={t(`questions.${question.id}.text`)}
             >
               {optionIds.map((optId) => {
                 const isSelected = selected === optId;
@@ -136,10 +138,12 @@ export default function QuizPage() {
                     key={optId}
                     variants={itemVariants}
                     onClick={() => handleSelect(optId)}
+                    role="radio"
+                    aria-checked={isSelected}
                     className={`w-full p-4 md:p-5 text-left rounded-xl border transition-all duration-200 cursor-pointer ${
                       isSelected
                         ? 'border-purple-500/60 bg-purple-500/10 text-slate-900 dark:text-white'
-                        : 'border-black/5 dark:border-white/5 bg-black/5 dark:bg-white/5 text-slate-600 dark:text-slate-300 hover:bg-black/10 dark:hover:bg-white/10 hover:border-black/20 dark:hover:border-white/20 hover:text-slate-900 dark:hover:text-white'
+                        : 'border-slate-200/80 dark:border-white/5 bg-white/50 dark:bg-white/5 text-slate-600 dark:text-slate-300 hover:bg-white/80 dark:hover:bg-white/10 hover:border-slate-300 dark:hover:border-white/20 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
                     <div className="flex items-start gap-3">
@@ -167,7 +171,7 @@ export default function QuizPage() {
         <div className="flex justify-between items-center mt-6">
           <button
             onClick={handleBack}
-            className="px-5 py-2.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-sm font-bold hover:bg-black/10 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer"
+            className="px-5 py-2.5 rounded-full border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-sm font-bold hover:bg-black/10 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer"
           >
             {t('quiz.back')}
           </button>

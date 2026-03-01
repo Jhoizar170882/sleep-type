@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { ScoreBreakdown as ScoreBreakdownType } from '@/types';
@@ -19,7 +20,7 @@ interface Props {
   percentages: ScoreBreakdownType;
 }
 
-export default function ScoreBreakdown({ percentages }: Props) {
+export default memo(function ScoreBreakdown({ percentages }: Props) {
   const { t } = useTranslation();
 
   return (
@@ -51,4 +52,4 @@ export default function ScoreBreakdown({ percentages }: Props) {
       })}
     </div>
   );
-}
+});

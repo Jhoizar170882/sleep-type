@@ -1,15 +1,16 @@
 import type { Answer, AnimalScores, ChronotypeId, ChronotypeResult, ScoreBreakdown } from '../types';
 import { questions } from './questions';
 
+// Pre-compute option map once at module load instead of per-call
+const optionMap = new Map<string, AnimalScores>();
+for (const q of questions) {
+  for (const opt of q.options) {
+    optionMap.set(`${q.id}-${opt.id}`, opt.scores);
+  }
+}
+
 export function calculateChronotype(answers: Answer[]): ChronotypeResult {
   const scores: ScoreBreakdown = { lion: 0, bear: 0, wolf: 0, dolphin: 0 };
-
-  const optionMap = new Map<string, AnimalScores>();
-  for (const q of questions) {
-    for (const opt of q.options) {
-      optionMap.set(`${q.id}-${opt.id}`, opt.scores);
-    }
-  }
 
   for (const answer of answers) {
     const scores_for_answer = optionMap.get(`${answer.questionId}-${answer.optionId}`);

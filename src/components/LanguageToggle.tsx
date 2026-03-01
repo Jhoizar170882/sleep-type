@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const LANGUAGES = [
@@ -13,10 +14,9 @@ const LANGUAGES = [
   { code: 'th', flag: '🇹🇭', label: 'ภาษาไทย' },
 ];
 
-export default function LanguageToggle() {
+export default memo(function LanguageToggle() {
   const { i18n } = useTranslation();
   const current = i18n.language;
-  const currentLang = LANGUAGES.find((l) => l.code === current) ?? LANGUAGES[0];
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(e.target.value);
@@ -24,7 +24,6 @@ export default function LanguageToggle() {
 
   return (
     <div className="relative flex items-center bg-black/5 dark:bg-white/5 backdrop-blur-md border border-black/10 dark:border-white/10 rounded-full px-3 py-1.5">
-      <span className="mr-1.5 text-base leading-none">{currentLang.flag}</span>
       <select
         value={current}
         onChange={handleChange}
@@ -46,4 +45,4 @@ export default function LanguageToggle() {
       </svg>
     </div>
   );
-}
+});

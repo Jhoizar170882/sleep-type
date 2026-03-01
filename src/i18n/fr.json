@@ -52,7 +52,8 @@
       "Répondez honnêtement à 10 questions sur vos habitudes quotidiennes",
       "Notre algorithme analyse vos scores pour identifier votre chronotype",
       "Obtenez votre feuille de route personnalisée de sommeil et de productivité"
-    ]
+    ],
+    "viewStats": "Voir les Statistiques"
   },
   "quiz": {
     "questionPrefix": "Question",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Explorer les Autres Chronotypes",
     "scoreBreakdownTitle": "Répartition des Scores",
     "yourScore": "Votre Score"
+  },
+  "stats": {
+    "title": "Statistiques en Direct",
+    "subtitle": "Découvrez comment les chronotypes du sommeil sont répartis parmi tous les participants.",
+    "totalParticipants": "Participants Totaux",
+    "distributionTitle": "Distribution des Chronotypes",
+    "takeQuizButton": "Faire le Quiz",
+    "backToHome": "Retour à l'Accueil"
   },
   "chronotypes": {
     "lion": {

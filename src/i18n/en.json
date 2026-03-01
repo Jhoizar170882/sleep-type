@@ -52,7 +52,8 @@
       "Answer 10 honest questions about your daily habits",
       "Our algorithm analyzes your scores to identify your chronotype",
       "Get your personalized sleep and productivity roadmap"
-    ]
+    ],
+    "viewStats": "View Statistics"
   },
   "quiz": {
     "questionPrefix": "Question",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Explore Other Chronotypes",
     "scoreBreakdownTitle": "Score Breakdown",
     "yourScore": "Your Score"
+  },
+  "stats": {
+    "title": "Live Statistics",
+    "subtitle": "See how sleep chronotypes are distributed across all participants.",
+    "totalParticipants": "Total Participants",
+    "distributionTitle": "Chronotype Distribution",
+    "takeQuizButton": "Take the Quiz",
+    "backToHome": "Back to Home"
   },
   "chronotypes": {
     "lion": {

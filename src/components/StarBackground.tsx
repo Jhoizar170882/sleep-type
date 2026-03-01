@@ -1,16 +1,17 @@
+import { memo } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 
-export default function StarBackground() {
+export default memo(function StarBackground() {
   const { resolvedTheme } = useTheme();
   const isLight = resolvedTheme === 'light';
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
       <div
         className="absolute inset-0 transition-all duration-700"
         style={{
           background: isLight
-            ? 'radial-gradient(ellipse at bottom, #dbeafe 0%, #e0f2fe 50%, #f0f9ff 100%)'
+            ? 'radial-gradient(ellipse at top, #f0f4ff 0%, #e8eeff 30%, #f5f3ff 60%, #fdf4ff 100%)'
             : 'radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)',
         }}
       />
@@ -23,15 +24,15 @@ export default function StarBackground() {
       )}
       {isLight && (
         <div
-          className="absolute inset-0 opacity-15"
+          className="absolute inset-0 opacity-[0.08]"
           style={{
             backgroundImage:
-              'radial-gradient(circle, #93c5fd 1px, transparent 1px), radial-gradient(circle, #a5b4fc 1px, transparent 1px)',
-            backgroundSize: '120px 120px, 200px 200px',
-            backgroundPosition: '0 0, 60px 60px',
+              'radial-gradient(circle, #818cf8 1px, transparent 1px), radial-gradient(circle, #c084fc 0.8px, transparent 0.8px)',
+            backgroundSize: '80px 80px, 130px 130px',
+            backgroundPosition: '0 0, 40px 40px',
           }}
         />
       )}
     </div>
   );
-}
+});

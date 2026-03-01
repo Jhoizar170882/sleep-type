@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || '';
+const API_BASE = import.meta.env.VITE_API_URL ?? '';
 
 interface SubmitPayload {
   answers: { questionId: number; optionId: string }[];
@@ -11,7 +11,6 @@ interface StatsResponse {
 }
 
 export async function submitQuizResult(payload: SubmitPayload): Promise<void> {
-  if (!API_BASE) return;
   try {
     await fetch(`${API_BASE}/api/submit`, {
       method: 'POST',
@@ -24,7 +23,6 @@ export async function submitQuizResult(payload: SubmitPayload): Promise<void> {
 }
 
 export async function fetchStats(): Promise<StatsResponse | null> {
-  if (!API_BASE) return null;
   try {
     const res = await fetch(`${API_BASE}/api/stats`);
     if (!res.ok) return null;

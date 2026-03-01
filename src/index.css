@@ -222,3 +222,15 @@
     animation: none !important;
   }
 }
+
+/* Star animation GPU compositing optimization */
+#stars, #stars2, #stars3 {
+  will-change: transform;
+  contain: layout style paint;
+  pointer-events: none;
+}
+
+#stars::after, #stars2::after, #stars3::after {
+  will-change: transform;
+  contain: layout style paint;
+}

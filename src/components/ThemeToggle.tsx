@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Monitor } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +12,7 @@ const modes: { mode: ThemeMode; icon: React.ReactNode; label: string }[] = [
   { mode: 'dark', icon: <Moon size={14} />, label: 'dark' },
 ];
 
-export default function ThemeToggle() {
+export default memo(function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const { t } = useTranslation();
 
@@ -44,4 +45,4 @@ export default function ThemeToggle() {
       </AnimatePresence>
     </button>
   );
-}
+});

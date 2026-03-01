@@ -72,7 +72,7 @@ export default function LandingPage() {
           animate="animate"
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-slate-500 dark:text-slate-400 text-xs font-bold tracking-widest uppercase mb-8">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-white/80 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 shadow-sm dark:shadow-none text-slate-500 dark:text-slate-400 text-xs font-bold tracking-widest uppercase mb-8">
             {t('landing.badge')}
           </span>
         </motion.div>
@@ -86,8 +86,8 @@ export default function LandingPage() {
           style={{ whiteSpace: 'pre-line' }}
         >
           <span
-            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200"
-            style={{ filter: 'drop-shadow(0 0 15px rgba(168,85,247,0.5))' }}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 dark:from-blue-200 dark:via-purple-200 dark:to-pink-200"
+            style={{ filter: 'drop-shadow(0 0 15px rgba(168,85,247,0.3))' }}
           >
             {t('landing.title')}
           </span>
@@ -113,9 +113,9 @@ export default function LandingPage() {
             onClick={() => navigate('/quiz')}
             animate={{
               boxShadow: [
-                '0 0 20px rgba(168,85,247,0.3)',
-                '0 0 40px rgba(168,85,247,0.6)',
-                '0 0 20px rgba(168,85,247,0.3)',
+                '0 0 20px rgba(99,102,241,0.25), 0 4px 20px rgba(168,85,247,0.15)',
+                '0 0 40px rgba(99,102,241,0.4), 0 4px 30px rgba(168,85,247,0.25)',
+                '0 0 20px rgba(99,102,241,0.25), 0 4px 20px rgba(168,85,247,0.15)',
               ],
             }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
@@ -133,18 +133,32 @@ export default function LandingPage() {
           initial="initial"
           animate="animate"
           transition={{ duration: 0.5, delay: 0.55 }}
-          className="flex items-center gap-8 mt-16"
+          className="flex flex-col items-center gap-4 mt-16"
         >
-          {[
-            { label: t('landing.statsLabel1'), value: displayTotal },
-            { label: t('landing.statsLabel2'), value: t('landing.statsValue2') },
-            { label: t('landing.statsLabel3'), value: t('landing.statsValue3') },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="text-2xl font-black text-slate-800 dark:text-slate-200">{stat.value}</p>
-              <p className="text-slate-400 dark:text-slate-500 text-xs mt-0.5">{stat.label}</p>
-            </div>
-          ))}
+          <div className="flex items-center gap-4 sm:gap-8">
+            <button
+              onClick={() => navigate('/stats')}
+              className="text-center cursor-pointer hover:opacity-70 transition-opacity"
+            >
+              <p className="text-2xl font-black text-slate-800 dark:text-slate-200">{displayTotal}</p>
+              <p className="text-slate-400 dark:text-slate-500 text-xs mt-0.5">{t('landing.statsLabel1')}</p>
+            </button>
+            {[
+              { label: t('landing.statsLabel2'), value: t('landing.statsValue2') },
+              { label: t('landing.statsLabel3'), value: t('landing.statsValue3') },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <p className="text-2xl font-black text-slate-800 dark:text-slate-200">{stat.value}</p>
+                <p className="text-slate-400 dark:text-slate-500 text-xs mt-0.5">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={() => navigate('/stats')}
+            className="text-xs text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 font-medium transition-colors cursor-pointer underline underline-offset-2"
+          >
+            {t('landing.viewStats')}
+          </button>
         </motion.div>
       </section>
 
@@ -173,7 +187,7 @@ export default function LandingPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-6 text-center hover:bg-black/8 dark:hover:bg-white/8 transition-all duration-300"
+              className="bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-slate-200/80 dark:border-white/10 shadow-sm dark:shadow-none rounded-3xl p-6 text-center hover:bg-black/8 dark:hover:bg-white/8 transition-all duration-300"
             >
               <div className="text-5xl mb-3">{card.emoji}</div>
               <p
@@ -213,9 +227,9 @@ export default function LandingPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="flex items-start gap-4 bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-2xl p-5"
+                className="flex items-start gap-4 bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-slate-200/80 dark:border-white/10 shadow-sm dark:shadow-none rounded-2xl p-5"
               >
-                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200 flex-shrink-0 leading-none mt-0.5">
+                <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-blue-300 dark:to-purple-300 flex-shrink-0 leading-none mt-0.5">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <p className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-relaxed">{step}</p>

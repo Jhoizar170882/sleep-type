@@ -123,5 +123,8 @@ export const chronotypes: ChronotypeData[] = [
   },
 ];
 
+// Pre-computed Map for O(1) lookup
+const chronotypeMap = new Map<string, ChronotypeData>(chronotypes.map((c) => [c.id, c]));
+
 export const getChronotypeById = (id: string): ChronotypeData | undefined =>
-  chronotypes.find((c) => c.id === id);
+  chronotypeMap.get(id);

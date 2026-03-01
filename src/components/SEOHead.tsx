@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { useTheme } from '@/context/ThemeContext';
@@ -52,16 +52,17 @@ export default function SEOHead({ titleKey = 'meta.title', descriptionKey = 'met
   const buildTitle = (): string => {
     if (isResultPage && resolvedType) {
       const typeName = t(`chronotypes.${resolvedType}.name`);
-      return `Your Result: ${typeName} — Sleep Chronotype Quiz`;
+      const siteName = t('nav.logo');
+      return `${typeName} — ${siteName}`;
     }
-    if (path === '/quiz') {
-      return 'Take the Quiz — Sleep Chronotype Quiz';
-    }
-    return 'Sleep Chronotype Quiz — Discover Your Sleep Type';
+    return t(titleKey);
   };
 
   const currentLocale = LOCALE_MAP[i18n.language] ?? 'en_US';
-  const alternateLocales = ALTERNATE_LOCALES.filter((l) => l !== currentLocale);
+  const alternateLocales = useMemo(
+    () => ALTERNATE_LOCALES.filter((l) => l !== currentLocale),
+    [currentLocale]
+  );
   const ogImage = resolvedType
     ? `${siteUrl}/og-${resolvedType}.png`
     : `${siteUrl}/og-image.png`;
@@ -112,6 +113,10 @@ export default function SEOHead({ titleKey = 'meta.title', descriptionKey = 'met
       meta.content = themeColor;
       document.head.appendChild(meta);
     }
+
+    return () => {
+      document.querySelectorAll('meta[property="og:locale:alternate"]').forEach(el => el.remove());
+    };
   }, [t, titleKey, descriptionKey, path, i18n.language, siteUrl, location.search, resolvedTheme]);
 
   return null;

@@ -52,7 +52,8 @@
       "日常習慣に関する10問に正直に答えてください",
       "アルゴリズムがスコアを分析し、クロノタイプを特定します",
       "パーソナライズされた睡眠・生産性ロードマップを確認しましょう"
-    ]
+    ],
+    "viewStats": "統計を見る"
   },
   "quiz": {
     "questionPrefix": "質問",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "他のクロノタイプを見る",
     "scoreBreakdownTitle": "スコア内訳",
     "yourScore": "あなたのスコア"
+  },
+  "stats": {
+    "title": "リアルタイム統計",
+    "subtitle": "世界中の受験者の睡眠クロノタイプ分布をご覧ください。",
+    "totalParticipants": "総参加者数",
+    "distributionTitle": "クロノタイプ分布",
+    "takeQuizButton": "診断を受ける",
+    "backToHome": "ホームに戻る"
   },
   "chronotypes": {
     "lion": {

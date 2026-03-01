@@ -52,7 +52,8 @@
       "Trả lời trung thực 10 câu hỏi về thói quen hàng ngày của bạn",
       "Thuật toán phân tích điểm số để xác định chronotype của bạn",
       "Nhận lộ trình giấc ngủ và năng suất được cá nhân hóa"
-    ]
+    ],
+    "viewStats": "Xem Thống Kê"
   },
   "quiz": {
     "questionPrefix": "Câu",
@@ -84,6 +85,14 @@
     "otherTypesTitle": "Khám Phá Các Chronotype Khác",
     "scoreBreakdownTitle": "Phân Tích Điểm Số",
     "yourScore": "Điểm Của Bạn"
+  },
+  "stats": {
+    "title": "Thống Kê Trực Tiếp",
+    "subtitle": "Xem phân bố chronotype giấc ngủ của tất cả người tham gia.",
+    "totalParticipants": "Tổng Số Người Tham Gia",
+    "distributionTitle": "Phân Bố Chronotype",
+    "takeQuizButton": "Bắt Đầu Trắc Nghiệm",
+    "backToHome": "Quay Về Trang Chủ"
   },
   "chronotypes": {
     "lion": {

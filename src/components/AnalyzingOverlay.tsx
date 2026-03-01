@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-export default function AnalyzingOverlay() {
+export default memo(function AnalyzingOverlay() {
   const { t } = useTranslation();
 
   return (
@@ -9,6 +10,8 @@ export default function AnalyzingOverlay() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      role="status"
+      aria-live="polite"
       className="fixed inset-0 z-50 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center"
     >
       <motion.div
@@ -40,4 +43,4 @@ export default function AnalyzingOverlay() {
       </motion.div>
     </motion.div>
   );
-}
+});
