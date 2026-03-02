@@ -8,7 +8,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please report it via email to **security@sleeptypequiz.com**.
+If you discover a security vulnerability, please report it via email to **security@sleep-type.quizlab.me**.
 
 **Please do not open public issues for security vulnerabilities.**
 

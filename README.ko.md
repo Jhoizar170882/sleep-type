@@ -18,7 +18,7 @@
 [![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=aws-lambda&logoColor=white)](https://aws.amazon.com/lambda/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![CI](https://github.com/black4305/sleep-type/actions/workflows/ci.yml/badge.svg)](https://github.com/black4305/sleep-type/actions/workflows/ci.yml)
 
@@ -89,7 +89,7 @@
 - 모바일 우선 반응형 디자인
 - 한국어 · 영어 이중 언어 지원 (i18next)
 - 원탭 SNS 공유 — 트위터, 페이스북, 카카오톡
-- 서버리스 백엔드 — AWS Lambda + API Gateway
+- 서버리스 백엔드 — Vercel Functions
 - 글로벌 통계 — 다른 사용자와 내 유형 비교
 
 ---
@@ -105,18 +105,12 @@
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)
 
-**Backend**
+**Backend / Infrastructure**
 
-![Python](https://img.shields.io/badge/Python_3.11-3776AB?logo=python&logoColor=white)
-![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=aws-lambda&logoColor=white)
-![API Gateway](https://img.shields.io/badge/API_Gateway-FF4F8B?logo=amazon-api-gateway&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon-00E5A0?logo=neon&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
-
-**Infrastructure**
-
-![AWS S3](https://img.shields.io/badge/S3-569A31?logo=amazons3&logoColor=white)
-![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?logo=amazon-aws&logoColor=white)
-![Serverless](https://img.shields.io/badge/Serverless_Framework-FD5750?logo=serverless&logoColor=white)
 
 ---
 
@@ -128,23 +122,18 @@
                    └────────────────┬────────────────┘
                                     │
                    ┌────────────────▼────────────────┐
-                   │        S3 + CloudFront           │
-                   │       (React SPA — CDN)          │
-                   └────────────────┬────────────────┘
-                                    │ API calls (HTTPS)
-                   ┌────────────────▼────────────────┐
-                   │          API Gateway             │
-                   │    POST /api/submit              │
-                   │    GET  /api/stats               │
-                   └────────────────┬────────────────┘
-                                    │ invokes
-                   ┌────────────────▼────────────────┐
-                   │         AWS Lambda               │
-                   │  (Python 3.11 — Serverless)      │
-                   └────────────────┬────────────────┘
-                                    │ SQL
-                   ┌────────────────▼────────────────┐
-                   │     PostgreSQL (AWS RDS)         │
+                   │             Vercel               │
+                   │       (React SPA + Edge CDN)     │
+                   │                                  │
+                   │  ┌───────────────────────────┐   │
+                   │  │   Vercel Functions (api/) │   │
+                   │  │   POST /api/submit        │   │
+                   │  │   GET  /api/stats         │   │
+                   │  └──────────────┬────────────┘   │
+                   └─────────────────┼───────────────┘
+                                     │ SQL
+                   ┌─────────────────▼───────────────┐
+                   │     Neon Serverless Postgres     │
                    │      quiz results + stats        │
                    └─────────────────────────────────┘
 ```
@@ -167,19 +156,13 @@ npm run dev
 
 앱은 `http://localhost:5173` 에서 확인할 수 있습니다.
 
-**백엔드 로컬 실행:**
+`api/` 디렉토리는 Vercel이 프론트엔드와 함께 자동으로 배포합니다. 별도의 백엔드 설정은 필요하지 않습니다.
 
-```bash
-cd backend
+**필요한 환경 변수 (Vercel 대시보드에서 설정):**
 
-# Python 의존성 설치
-pip install -r requirements.txt
-
-# Serverless로 로컬 API 서버 실행
-sls offline start
-```
-
-로컬 API는 `http://localhost:3000/prod` 에서 확인할 수 있습니다.
+| 변수 | 설명 |
+|---|---|
+| `DATABASE_URL` | Neon Serverless Postgres 연결 문자열 |
 
 ---
 
@@ -187,27 +170,23 @@ sls offline start
 
 ```
 sleep-type/
+├── api/
+│   ├── submit.ts           # POST /api/submit (점수 계산, DB 저장)
+│   └── stats.ts            # GET /api/stats (크로노타입 분포)
 ├── src/
 │   ├── components/         # 재사용 가능한 UI 컴포넌트
 │   │   └── ui/             # shadcn/ui 기본 컴포넌트
 │   ├── data/
 │   │   ├── chronotypes.ts  # 4가지 크로노타입 정의 및 타임라인
-│   │   ├── questions.ts    # 10개 퀴즈 문항과 점수 매트릭스
-│   │   └── calculateChronotype.ts
+│   │   └── questions.ts    # 10개 퀴즈 문항과 점수 매트릭스
 │   ├── i18n/
 │   │   ├── en.json         # 영어 번역
 │   │   └── ko.json         # 한국어 번역
+│   ├── lib/
+│   │   └── api.ts          # 프론트엔드 API 호출
 │   ├── pages/              # 라우트 단위 페이지 컴포넌트
 │   ├── hooks/              # 커스텀 React 훅
 │   └── types/              # TypeScript 타입 정의
-├── backend/
-│   ├── handler.py          # Lambda 진입점
-│   ├── scoring.py          # 크로노타입 점수 계산 로직
-│   ├── db.py               # PostgreSQL 연결 레이어
-│   ├── schema.sql          # 데이터베이스 스키마
-│   ├── requirements.txt
-│   ├── serverless.yml      # Serverless Framework 설정
-│   └── .env.example        # 환경 변수 템플릿
 ├── public/
 │   ├── robots.txt           # 크롤러 규칙
 │   ├── sitemap.xml          # SEO 사이트맵
@@ -276,7 +255,7 @@ sleep-type/
 
 <div align="center">
 
-React · TypeScript · Python · AWS 그리고 수많은 밤샘 작업으로 만들어졌습니다 🐺
+React · TypeScript · Vercel · Neon 그리고 수많은 밤샘 작업으로 만들어졌습니다 🐺
 
 **이 프로젝트가 도움이 되었거나 즐거우셨다면 Star를 남겨 주세요.**
 

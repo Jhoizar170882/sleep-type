@@ -33,4 +33,4 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://sleeptypequiz.com/sitemap.xml
+Sitemap: https://sleep-type.quizlab.me/sitemap.xml

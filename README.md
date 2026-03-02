@@ -18,7 +18,7 @@
 [![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=awslambda&logoColor=white)](https://aws.amazon.com/lambda/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github&logoColor=white)](CONTRIBUTING.md)
 [![CI](https://github.com/black4305/sleep-type/actions/workflows/ci.yml/badge.svg)](https://github.com/black4305/sleep-type/actions/workflows/ci.yml)
 
@@ -47,7 +47,7 @@
 
 <div align="center">
 
-**[sleeptypequiz.com](https://sleeptypequiz.com)**
+**[sleep-type.quizlab.me](https://sleep-type.quizlab.me)**
 
 > Screenshots coming soon. Star this repo to stay updated.
 
@@ -98,7 +98,7 @@ This quiz analyzes 10 dimensions of your daily rhythm — wake time, energy peak
 - Mobile-first responsive design — works seamlessly on all screen sizes
 - Bilingual — English and Korean (i18next with full translation coverage)
 - One-tap SNS sharing — Twitter, Facebook, KakaoTalk, and Copy Link
-- Serverless backend — AWS Lambda + API Gateway for result submission
+- Serverless backend — Vercel Functions for result submission
 - Global stats — see how your chronotype compares to all other quiz takers
 
 ---
@@ -115,18 +115,12 @@ This quiz analyzes 10 dimensions of your daily rhythm — wake time, energy peak
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)
 ![i18next](https://img.shields.io/badge/i18next-26A69A?logo=i18next&logoColor=white)
 
-**Backend**
+**Backend / Infrastructure**
 
-![Python](https://img.shields.io/badge/Python_3.11-3776AB?logo=python&logoColor=white)
-![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=awslambda&logoColor=white)
-![API Gateway](https://img.shields.io/badge/API_Gateway-FF4F8B?logo=amazonapigateway&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon-00E5A0?logo=neon&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
-
-**Infrastructure**
-
-![AWS S3](https://img.shields.io/badge/S3-569A31?logo=amazons3&logoColor=white)
-![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?logo=amazonaws&logoColor=white)
-![Serverless](https://img.shields.io/badge/Serverless_Framework-FD5750?logo=serverless&logoColor=white)
 
 ---
 
@@ -138,28 +132,23 @@ This quiz analyzes 10 dimensions of your daily rhythm — wake time, energy peak
                    └────────────────┬────────────────┘
                                     │
                    ┌────────────────▼────────────────┐
-                   │        S3 + CloudFront           │
-                   │       (React SPA — CDN)          │
-                   └────────────────┬────────────────┘
-                                    │ API calls (HTTPS)
-                   ┌────────────────▼────────────────┐
-                   │          API Gateway             │
-                   │    POST /api/submit              │
-                   │    GET  /api/stats               │
-                   └────────────────┬────────────────┘
-                                    │ invokes
-                   ┌────────────────▼────────────────┐
-                   │         AWS Lambda               │
-                   │  (Python 3.11 — Serverless)      │
-                   └────────────────┬────────────────┘
-                                    │ SQL
-                   ┌────────────────▼────────────────┐
-                   │     PostgreSQL (AWS RDS)         │
+                   │             Vercel               │
+                   │       (React SPA + Edge CDN)     │
+                   │                                  │
+                   │  ┌───────────────────────────┐   │
+                   │  │   Vercel Functions (api/) │   │
+                   │  │   POST /api/submit        │   │
+                   │  │   GET  /api/stats         │   │
+                   │  └──────────────┬────────────┘   │
+                   └─────────────────┼───────────────┘
+                                     │ SQL
+                   ┌─────────────────▼───────────────┐
+                   │     Neon Serverless Postgres     │
                    │      quiz results + stats        │
                    └─────────────────────────────────┘
 ```
 
-The frontend is a fully static React SPA deployed to S3 and served globally via CloudFront. Quiz submissions hit API Gateway, which triggers a Python Lambda function that scores the answers, writes the result to PostgreSQL, and returns the chronotype. The `/api/stats` endpoint powers the real-time global distribution display on the result page.
+The frontend is a React SPA deployed to Vercel. Quiz submissions are handled by Vercel Serverless Functions (`api/submit.ts`, `api/stats.ts`) co-located in the same repo — no separate deployment needed. Results are persisted to Neon Serverless Postgres (Singapore region). The `/api/stats` endpoint powers the real-time global distribution display.
 
 ---
 
@@ -179,36 +168,13 @@ npm run dev
 
 The app will be available at `http://localhost:5173`.
 
-**Running the backend locally:**
+The `api/` directory is deployed automatically by Vercel alongside the frontend. No separate backend setup is required.
 
-```bash
-cd backend
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Copy and configure environment variables
-cp .env.example .env
-
-# Start the API locally with Serverless Offline
-sls offline start
-```
-
-The local API will be available at `http://localhost:3000/prod`.
-
-**Environment variables required for the backend:**
+**Environment variable required (set in Vercel dashboard):**
 
 | Variable | Description |
 |---|---|
-| `DB_HOST` | PostgreSQL host |
-| `DB_NAME` | Database name (default: `sleepquiz`) |
-| `DB_USER` | Database user |
-| `DB_PASSWORD` | Database password |
-| `DB_PORT` | Database port (default: `5432`) |
-| `VPC_SECURITY_GROUP_ID` | AWS VPC security group ID |
-| `VPC_SUBNET_ID_1` | First VPC subnet ID |
-| `VPC_SUBNET_ID_2` | Second VPC subnet ID |
-| `ALLOWED_ORIGIN` | CORS allowed origin (default: `*`) |
+| `DATABASE_URL` | Neon Serverless Postgres connection string |
 
 ---
 
@@ -216,10 +182,13 @@ The local API will be available at `http://localhost:3000/prod`.
 
 ```
 sleep-type/
+├── api/
+│   ├── submit.ts                  # POST /api/submit (scoring, DB insert)
+│   └── stats.ts                   # GET /api/stats (chronotype distribution)
 ├── src/
 │   ├── components/
 │   │   ├── AnalyzingOverlay.tsx   # Loading animation between quiz and result
-│   │   ├── LanguageToggle.tsx     # EN / KO switcher
+│   │   ├── LanguageToggle.tsx     # Language switcher
 │   │   ├── ScoreBreakdown.tsx     # Percentage bars for all 4 chronotypes
 │   │   ├── SEOHead.tsx            # Dynamic meta tags per page
 │   │   ├── ShareButtons.tsx       # Twitter / Facebook / KakaoTalk / Copy
@@ -233,20 +202,16 @@ sleep-type/
 │   │   ├── en.json                # English translations
 │   │   ├── ko.json                # Korean translations
 │   │   └── index.ts               # i18next configuration
+│   ├── lib/
+│   │   └── api.ts                 # Frontend API calls
 │   ├── pages/
 │   │   ├── LandingPage.tsx        # Hero + chronotype cards + how it works
 │   │   ├── QuizPage.tsx           # 10-question quiz flow
-│   │   └── ResultPage.tsx         # Result reveal + timeline + tips + share
+│   │   ├── ResultPage.tsx         # Result reveal + timeline + tips + share
+│   │   └── StatsPage.tsx          # Public stats dashboard (/stats)
 │   ├── hooks/                     # Custom React hooks
 │   ├── types/                     # TypeScript type definitions
 │   └── main.tsx
-├── backend/
-│   ├── handler.py                 # Lambda entry point (submit + stats)
-│   ├── scoring.py                 # Chronotype scoring algorithm
-│   ├── db.py                      # PostgreSQL connection layer
-│   ├── schema.sql                 # Database schema
-│   ├── requirements.txt
-│   └── serverless.yml             # Serverless Framework config (ap-northeast-2)
 ├── public/
 │   ├── robots.txt
 │   ├── sitemap.xml
@@ -331,7 +296,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-Made with React · TypeScript · Python · AWS · and a lot of late nights
+Made with React · TypeScript · Vercel · Neon · and a lot of late nights
 
 **If this project helped you discover your biological clock, please leave a star. It keeps the wolves awake.**
 

@@ -21,7 +21,6 @@ There are many ways to contribute:
 ### Prerequisites
 
 - Node.js 18+
-- Python 3.9+
 
 ### Steps
 
@@ -42,13 +41,6 @@ There are many ways to contribute:
 
    ```bash
    npm run dev
-   ```
-
-4. **Set up the backend**
-
-   ```bash
-   cd backend
-   pip install -r requirements.txt
    ```
 
 ---

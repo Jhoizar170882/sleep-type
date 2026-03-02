@@ -42,7 +42,7 @@ export default function SEOHead({ titleKey = 'meta.title', descriptionKey = 'met
   const { resolvedTheme } = useTheme();
   const location = useLocation();
   const [searchParams] = useSearchParams();
-  const siteUrl = import.meta.env.VITE_SITE_URL || 'https://sleeptypequiz.com';
+  const siteUrl = import.meta.env.VITE_SITE_URL || 'https://sleep-type.quizlab.me';
 
   const isResultPage = path === '/result';
   const chronotypeId = isResultPage ? (searchParams.get('type') ?? '') : '';
@@ -64,8 +64,8 @@ export default function SEOHead({ titleKey = 'meta.title', descriptionKey = 'met
     [currentLocale]
   );
   const ogImage = resolvedType
-    ? `${siteUrl}/og-${resolvedType}.png`
-    : `${siteUrl}/og-image.png`;
+    ? `${siteUrl}/og-${resolvedType}.jpg`
+    : `${siteUrl}/og-image.jpg`;
   const baseThemeColor = resolvedTheme === 'light' ? '#f0f9ff' : '#0f172a';
   const themeColor = resolvedType
     ? CHRONOTYPE_THEME_COLORS[resolvedType]
