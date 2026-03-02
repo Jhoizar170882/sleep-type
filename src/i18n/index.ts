@@ -14,6 +14,10 @@ import th from './th.json';
 const supportedLanguages = ['ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt', 'vi', 'th'];
 
 function detectLanguage(): string {
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  if (urlLang && supportedLanguages.includes(urlLang)) {
+    return urlLang;
+  }
   const saved = localStorage.getItem('sleep-quiz-lang');
   if (saved && supportedLanguages.includes(saved)) {
     return saved;

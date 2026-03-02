@@ -9,10 +9,23 @@
     <title>Sleep Chronotype Quiz — Discover Your Sleep Type</title>
     <meta name="title" content="Sleep Chronotype Quiz — Discover Your Sleep Type" />
     <meta name="description" content="Discover your sleep chronotype with our free 10-question quiz. Are you a Lion, Bear, Wolf, or Dolphin? Get personalized sleep and productivity tips based on your biological clock." />
-    <meta name="keywords" content="sleep chronotype test, sleep animal quiz, chronotype quiz free, sleep type test, what is my chronotype, lion bear wolf dolphin quiz, circadian rhythm test, sleep personality quiz" />
+    <meta name="keywords" content="sleep chronotype test, sleep animal quiz, chronotype quiz free, sleep type test, what is my chronotype, lion bear wolf dolphin quiz, circadian rhythm test, sleep personality quiz, 수면 유형 테스트, 크로노타입 테스트, 수면 동물 퀴즈, 睡眠タイプ診断, クロノタイプテスト, 睡眠类型测试, 时间型测试, test de cronotipo, test de sommeil" />
     <meta name="author" content="Sleep Type Quiz" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://sleep-type.quizlab.me/" />
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://sleep-type.quizlab.me/?lang=en" />
+    <link rel="alternate" hreflang="ko" href="https://sleep-type.quizlab.me/?lang=ko" />
+    <link rel="alternate" hreflang="ja" href="https://sleep-type.quizlab.me/?lang=ja" />
+    <link rel="alternate" hreflang="zh" href="https://sleep-type.quizlab.me/?lang=zh" />
+    <link rel="alternate" hreflang="es" href="https://sleep-type.quizlab.me/?lang=es" />
+    <link rel="alternate" hreflang="fr" href="https://sleep-type.quizlab.me/?lang=fr" />
+    <link rel="alternate" hreflang="de" href="https://sleep-type.quizlab.me/?lang=de" />
+    <link rel="alternate" hreflang="pt" href="https://sleep-type.quizlab.me/?lang=pt" />
+    <link rel="alternate" hreflang="vi" href="https://sleep-type.quizlab.me/?lang=vi" />
+    <link rel="alternate" hreflang="th" href="https://sleep-type.quizlab.me/?lang=th" />
+    <link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/" />
 
     <!-- Additional AI-friendly meta -->
     <meta name="classification" content="Health, Sleep Science, Quiz" />
@@ -56,9 +69,6 @@
     <meta name="twitter:description" content="Are you a Lion, Bear, Wolf, or Dolphin? Take our free quiz to discover your sleep chronotype!" />
     <meta name="twitter:image" content="https://sleep-type.quizlab.me/og-image.jpg" />
 
-    <!-- Naver -->
-    <meta name="naver-site-verification" content="" />
-
     <!-- Google AdSense -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX" crossorigin="anonymous"></script> -->
 
@@ -73,10 +83,12 @@
       "description": "Discover your sleep chronotype with our free 10-question quiz. Find out if you're a Lion, Bear, Wolf, or Dolphin and get personalized tips.",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Web",
+      "browserRequirements": "Requires JavaScript",
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
       },
       "inLanguage": ["en", "ko", "ja", "zh", "es", "fr", "de", "pt", "vi", "th"],
       "creator": {
@@ -84,6 +96,16 @@
         "name": "Sleep Type Quiz",
         "url": "https://sleep-type.quizlab.me"
       },
+      "featureList": [
+        "10-question sleep chronotype quiz",
+        "4 chronotype results (Lion, Bear, Wolf, Dolphin)",
+        "Personalized daily timeline",
+        "Sleep and productivity tips",
+        "Social media sharing",
+        "10 languages supported",
+        "Free to use",
+        "Based on chronobiology research"
+      ],
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".quiz-intro", ".result-summary", ".faq-section"]
@@ -186,6 +208,14 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:system-ui,sans-serif;text-align:center;padding:2rem">
+        <div>
+          <h1 style="font-size:1.5rem;margin-bottom:0.5rem">Sleep Type Quiz</h1>
+          <p>This application requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+        </div>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
