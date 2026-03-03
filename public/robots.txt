@@ -15,6 +15,15 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 # Block AI training crawlers (prevent model absorption, keep citation)
 User-agent: GPTBot
 Disallow: /
@@ -32,6 +41,12 @@ User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: cohere-ai
 Disallow: /
 
 Sitemap: https://sleep-type.quizlab.me/sitemap.xml
