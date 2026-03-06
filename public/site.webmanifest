@@ -1,0 +1,16 @@
+{
+  "name": "Sleep Chronotype Quiz",
+  "short_name": "Sleep Type",
+  "description": "Discover your sleep chronotype — Lion, Bear, Wolf, or Dolphin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

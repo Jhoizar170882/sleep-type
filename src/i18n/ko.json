@@ -18,7 +18,20 @@
     "tagline": "내 몸의 리듬을 이해하는 것이 최고의 자기계발입니다.",
     "copyright": "© 2026 수면 유형 테스트. 모든 권리 보유.",
     "privacy": "개인정보처리방침",
-    "terms": "이용약관"
+    "terms": "이용약관",
+    "about": "소개"
+  },
+  "privacy": {
+    "title": "개인정보처리방침",
+    "description": "Learn how Sleep Type Quiz collects, uses, and protects your data. We use SHA-256 hashed IPs, localStorage (no cookies), and Google AdSense. GDPR and CCPA compliant. No users under 13."
+  },
+  "terms": {
+    "title": "이용약관",
+    "description": "Terms of Service for Sleep Type Quiz. This quiz is for informational purposes only and does not constitute medical advice. Includes advertising via Google AdSense."
+  },
+  "about": {
+    "title": "수면 유형 테스트 소개",
+    "description": "Sleep Type Quiz is a free chronotype assessment based on Dr. Michael Breus's research. Discover if you are a Lion, Bear, Wolf, or Dolphin in 10 questions. Available in 10 languages."
   },
   "language": {
     "ko": "한국어",

@@ -239,15 +239,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-4 py-8 text-center border-t border-black/5 dark:border-white/5">
-        <p className="text-slate-400 dark:text-slate-500 text-xs font-medium">
-          {t('footer.tagline')}
-        </p>
-        <p className="text-slate-300 dark:text-slate-600 text-xs mt-2">
-          {t('footer.copyright')}
-        </p>
-      </footer>
     </motion.div>
     </>
   );

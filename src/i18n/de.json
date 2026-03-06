@@ -18,7 +18,20 @@
     "tagline": "Ihren Rhythmus zu verstehen ist die Grundlage der persönlichen Optimierung.",
     "copyright": "© 2026 Sleep Type Quiz. Alle Rechte vorbehalten.",
     "privacy": "Datenschutzrichtlinie",
-    "terms": "Nutzungsbedingungen"
+    "terms": "Nutzungsbedingungen",
+    "about": "Über uns"
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "description": "Learn how Sleep Type Quiz collects, uses, and protects your data. We use SHA-256 hashed IPs, localStorage (no cookies), and Google AdSense. GDPR and CCPA compliant. No users under 13."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "description": "Terms of Service for Sleep Type Quiz. This quiz is for informational purposes only and does not constitute medical advice. Includes advertising via Google AdSense."
+  },
+  "about": {
+    "title": "Über Sleep Type Quiz",
+    "description": "Sleep Type Quiz is a free chronotype assessment based on Dr. Michael Breus's research. Discover if you are a Lion, Bear, Wolf, or Dolphin in 10 questions. Available in 10 languages."
   },
   "language": {
     "ko": "한국어",

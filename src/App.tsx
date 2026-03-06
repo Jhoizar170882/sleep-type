@@ -5,11 +5,15 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import StarBackground from '@/components/StarBackground';
 import LanguageToggle from '@/components/LanguageToggle';
 import ThemeToggle from '@/components/ThemeToggle';
+import Footer from '@/components/Footer';
 import { lazy, Suspense } from 'react';
 const LandingPage = lazy(() => import('@/pages/LandingPage'));
 const QuizPage = lazy(() => import('@/pages/QuizPage'));
 const ResultPage = lazy(() => import('@/pages/ResultPage'));
 const StatsPage = lazy(() => import('@/pages/StatsPage'));
+const PrivacyPolicyPage = lazy(() => import('@/pages/PrivacyPolicyPage'));
+const TermsPage = lazy(() => import('@/pages/TermsPage'));
+const AboutPage = lazy(() => import('@/pages/AboutPage'));
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -21,6 +25,9 @@ function AnimatedRoutes() {
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/result" element={<ResultPage />} />
           <Route path="/stats" element={<StatsPage />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
@@ -37,6 +44,7 @@ function AppInner() {
         <LanguageToggle />
       </div>
       <AnimatedRoutes />
+      <Footer />
     </div>
   );
 }

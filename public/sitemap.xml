@@ -5,7 +5,7 @@
   <!-- Home -->
   <url>
     <loc>https://sleep-type.quizlab.me/</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/"/>
@@ -24,7 +24,7 @@
   <!-- Quiz -->
   <url>
     <loc>https://sleep-type.quizlab.me/quiz</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/quiz"/>
@@ -43,7 +43,7 @@
   <!-- Result (generic) -->
   <url>
     <loc>https://sleep-type.quizlab.me/result</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/result"/>
@@ -62,7 +62,7 @@
   <!-- Result: Lion -->
   <url>
     <loc>https://sleep-type.quizlab.me/result?type=lion</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/result?type=lion"/>
@@ -81,7 +81,7 @@
   <!-- Result: Bear -->
   <url>
     <loc>https://sleep-type.quizlab.me/result?type=bear</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/result?type=bear"/>
@@ -100,7 +100,7 @@
   <!-- Result: Wolf -->
   <url>
     <loc>https://sleep-type.quizlab.me/result?type=wolf</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/result?type=wolf"/>
@@ -119,7 +119,7 @@
   <!-- Result: Dolphin -->
   <url>
     <loc>https://sleep-type.quizlab.me/result?type=dolphin</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/result?type=dolphin"/>
@@ -135,10 +135,67 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://sleep-type.quizlab.me/result?type=dolphin&amp;lang=th"/>
   </url>
 
+  <!-- Privacy -->
+  <url>
+    <loc>https://sleep-type.quizlab.me/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sleep-type.quizlab.me/privacy?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sleep-type.quizlab.me/privacy?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sleep-type.quizlab.me/privacy?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://sleep-type.quizlab.me/privacy?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sleep-type.quizlab.me/privacy?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sleep-type.quizlab.me/privacy?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sleep-type.quizlab.me/privacy?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sleep-type.quizlab.me/privacy?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://sleep-type.quizlab.me/privacy?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://sleep-type.quizlab.me/privacy?lang=th"/>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://sleep-type.quizlab.me/terms</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sleep-type.quizlab.me/terms?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sleep-type.quizlab.me/terms?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sleep-type.quizlab.me/terms?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://sleep-type.quizlab.me/terms?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sleep-type.quizlab.me/terms?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sleep-type.quizlab.me/terms?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sleep-type.quizlab.me/terms?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sleep-type.quizlab.me/terms?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://sleep-type.quizlab.me/terms?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://sleep-type.quizlab.me/terms?lang=th"/>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://sleep-type.quizlab.me/about</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sleep-type.quizlab.me/about?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sleep-type.quizlab.me/about?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sleep-type.quizlab.me/about?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://sleep-type.quizlab.me/about?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sleep-type.quizlab.me/about?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sleep-type.quizlab.me/about?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sleep-type.quizlab.me/about?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sleep-type.quizlab.me/about?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://sleep-type.quizlab.me/about?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://sleep-type.quizlab.me/about?lang=th"/>
+  </url>
+
   <!-- Stats -->
   <url>
     <loc>https://sleep-type.quizlab.me/stats</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sleep-type.quizlab.me/stats"/>
